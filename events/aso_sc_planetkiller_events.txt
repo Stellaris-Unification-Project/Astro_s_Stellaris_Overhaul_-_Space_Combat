@@ -1,0 +1,415 @@
+namespace = aso_sc_planetkiller
+
+# Machine World Beam
+planet_event = {
+	id = aso_sc_planetkiller.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		#Terraform Complete Message
+		if = {
+			limit = {
+				exists = owner
+				owner = { NOT = { is_same_value = from.owner } }
+			}
+			from.owner = { country_event = { id = aso_sc_planetkiller.101 } }
+		}
+		
+		#Dismantle observation post
+		if = {
+			limit = { has_observation_outpost = yes }
+			observation_outpost_owner = { country_event = { id = planet_destruction.1000 days = 1 } }
+		}
+
+		#Galactic Council
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = { set_timed_country_flag = { flag = resolution_breached_fired_machineworld_beam days = 3600 } }
+		}
+
+		#Opinion and Threat Effects
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				if = {
+					limit = { root = { is_colony = no } }
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_an_uninhabited_world
+						who = from.owner
+					}
+				}
+				else = {
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_world
+						who = from.owner
+					}
+				}
+			}
+			# modifiers for victim
+			owner = {
+				if = {
+					limit = {
+						root = { is_colony = no }
+						NOT = { has_authority = auth_machine_intelligence }
+					}
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_my_uninhabited_world
+						who = from.owner
+					}
+				}
+				else_if = {
+					limit = { NOT = { has_authority = auth_machine_intelligence } }
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_my_world
+						who = from.owner
+					}
+				}
+				else = {}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = primitive }
+			}
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					is_country_type = default
+					NOR = {
+						is_xenophobe = yes
+						is_homicidal = yes
+						is_xenophile = yes
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world
+					who = from.owner
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world_phile
+					who = from.owner
+				}
+			}
+		}
+		
+		# Add war exhaustion to planet owner
+		if = {
+			limit = { exists = owner }
+			owner = {
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+
+		change_pc = pc_machine
+		if ={
+			limit = { has_modifier = terraforming_candidate }
+			remove_modifier = terraforming_candidate
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+		
+		from.owner = { country_event = { id = aso_sc_planetkiller.101 } }
+	}
+}
+
+country_event = {
+	id = aso_sc_planetkiller.101
+	title = aso_sc_planetkiller.101.name
+	desc = aso_sc_planetkiller.101.desc
+	picture = GFX_evt_planet_beam
+	show_sound = event_solar_fusion
+	location = from
+	
+	is_triggered_only = yes
+
+	immediate = { set_country_flag = fired_machineorhivebeam }
+
+	option = { name = aso_sc_planetkiller.101.tooltip }
+}
+
+# Hive World Beam
+planet_event = {
+	id = aso_sc_planetkiller.200
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		#Terraform Complete Message
+		if = {
+			limit = {
+				exists = owner
+				owner = { NOT = { is_same_value = from.owner } }
+			}
+			from.owner = { country_event = { id = aso_sc_planetkiller.201 } }
+		}
+		
+		#Dismantle observation post
+		if = {
+			limit = { has_observation_outpost = yes }
+			observation_outpost_owner = { country_event = { id = planet_destruction.1000 days = 1 } }
+		}
+
+		#Galactic Council
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
+					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
+					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
+				}
+			}
+			from.owner = { set_timed_country_flag = { flag = resolution_breached_fired_machineworld_beam days = 3600 } }
+		}
+
+		#Opinion and Threat Effects
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				if = {
+					limit = { root = { is_colony = no } }
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_an_uninhabited_world
+						who = from.owner
+					}
+				}
+				else = {
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_world
+						who = from.owner
+					}
+				}
+			}
+			# modifiers for victim
+			owner = {
+				if = {
+					limit = {
+						root = { is_colony = no }
+						NOT = { has_authority = auth_machine_intelligence }
+					}
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_my_uninhabited_world
+						who = from.owner
+					}
+				}
+				else_if = {
+					limit = { NOT = { has_authority = auth_machine_intelligence } }
+					add_opinion_modifier = {
+						modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_my_world
+						who = from.owner
+					}
+				}
+				else = {}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					add_modifier = {
+						modifier = colossus_victim
+						days = 10800 # 30 years
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				exists = owner
+				owner = { is_country_type = primitive }
+			}
+			# modifier for allies + those upset by genocide
+			every_country = {
+				limit = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					is_country_type = default
+					NOR = {
+						is_xenophobe = yes
+						is_homicidal = yes
+						is_xenophile = yes
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world
+					who = from.owner
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						has_ai_personality = awakened_fallen_empire_xenophile
+						AND = {
+							is_country_type = default
+							is_xenophile = yes
+						}
+					}
+				}
+				add_opinion_modifier = {
+					modifier = opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world_phile
+					who = from.owner
+				}
+			}
+		}
+		
+		# Add war exhaustion to planet owner
+		if = {
+			limit = { exists = owner }
+			owner = {
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+
+		change_pc = pc_hive
+		if ={
+			limit = { has_modifier = terraforming_candidate }
+			remove_modifier = terraforming_candidate
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+		
+		from.owner = { country_event = { id = aso_sc_planetkiller.201 } }
+	}
+}
+
+country_event = {
+	id = aso_sc_planetkiller.201
+	title = aso_sc_planetkiller.201.name
+	desc = aso_sc_planetkiller.201.desc
+	picture = GFX_evt_planet_beam
+	show_sound = event_solar_fusion
+	location = from
+	
+	is_triggered_only = yes
+
+	option = { name = aso_sc_planetkiller.201.tooltip }
+}

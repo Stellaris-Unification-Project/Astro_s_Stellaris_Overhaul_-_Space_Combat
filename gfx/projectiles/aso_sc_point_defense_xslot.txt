@@ -1,0 +1,73 @@
+# ####################
+#  Tempest Point Defense
+# ####################
+
+projectile_gfx_beam = {
+	name = "aso_sc_point_defense_x_1"
+	color = { 0.15 0.15 0.15 1.5 }
+	hit_entity = "aso_sc_point_defense_5_hit_entity"
+	shield_hit_entity = "aso_sc_point_defense_5_hit_entity"
+	muzzle_flash_entity = "aso_sc_point_defense_5_muzzle_entity"
+	
+	width = 5.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 0.2
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 0.2
+	}
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}
+
+# ####################
+#  Hellfire Point Defense
+# ####################
+
+projectile_gfx_beam = {
+	name = "aso_sc_point_defense_x_2"
+	color = { 0.15 0.15 0.15 1.5 }
+	hit_entity = "aso_sc_point_defense_5_hit_entity"
+	shield_hit_entity = "aso_sc_point_defense_5_hit_entity"
+	muzzle_flash_entity = "aso_sc_point_defense_5_muzzle_entity"
+	
+	width = 5.0
+	texture_scroll_speed = 5.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 0.2
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 0.0
+			0.05	0.0
+			0.2 50.0
+			0.8 5.0
+			1.0 0.0
+		}
+		duration = 0.2
+	}
+	texture = "gfx/models/combat_items/laser_diffuse2.dds"
+}

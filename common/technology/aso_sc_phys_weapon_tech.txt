@@ -1,0 +1,1898 @@
+######################################
+# New & Replaced Physics Weapon Techs
+######################################
+#
+# Arc Emitter X1-X2: Added additional weight_modifiers (x0 if not has disruptors specialization)
+# Disruptors 1-3: Added additional prerequisites (must have T1 specialization), weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Disruptors 4-5: New techs w/weight_modifiers (x0 if not has specialization)
+# Energy Lance X1-X2: Added additional weight_modifiers (x0 if not has lasers specialization)
+# Energy Torpedoes 1-2: Requires Cruisers/Battleships instead of Mass Drivers
+# Lasers 1-5: Added additional weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Lasers 4-5: Added additional weight_modifiers (x0 if not has specialization)
+# Mining Drone Laser: Enforces reverse-engineerability.
+# Null Void Beam: Enforces reverse-engineerability.
+# Plasma 1-3: Added additional prerequisites (must have T1 specialization), weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Plasma 4-5: New techs w/weight_modifiers (x0 if not has specialization)
+# Plasma Battery X1-X2: New techs w/weight_modifiers (x0 if not has point defense specialization)
+# Point Defense 1-3: Added additional weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Point Defense 4-5: New techs w/weight_modifiers (x0 if not has specialization)
+# Tempest Point Defense X1-X2: New techs w/weight_modifiers (x0 if not has point defense specialization)
+# Unbidden Weapon: Enforces reverse-engineerability.
+# Void Cloud Weapon: Enforces reverse-engineerability.
+#
+# ##################
+# Arc Emitter
+# ##################
+
+tech_arc_emitter_1 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_aso_sc_disruptors_5" "tech_battleships" }
+	weight = @tier4weight2
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_disruptors }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_arc_emitter_2 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_arc_emitter_1" }
+	weight = @tier4weight3
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_disruptors }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# ##################
+# Disruptor Weapons
+# ##################
+
+tech_disruptors_1 = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	weight = @tier2weight2
+	
+	is_reverse_engineerable = yes
+	
+	prerequisites = { "tech_aso_sc_weapon_t1_spec" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+}
+
+tech_disruptors_2 = {
+	area = physics
+	cost = @tier3cost1
+	tier = 3
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_disruptors_1" }
+	weight = @tier3weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+}
+
+tech_disruptors_3 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_disruptors_2" }
+	weight = @tier4weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+}
+
+tech_aso_sc_disruptors_4 = {
+	area = physics
+	cost = @tier5cost1
+	tier = 5
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_disruptors_3" }
+	weight = @tier5weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_disruptors }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 0.1
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+}
+
+tech_aso_sc_disruptors_5 = {
+	area = physics
+	cost = @aso_sc_tier6cost1
+	tier = 6
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_aso_sc_disruptors_4" }
+	weight = @aso_sc_tier6weight1
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_disruptors }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_disruptors
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_disruptors
+		}
+	}
+}
+
+# ##################
+# Energy Lance
+# ##################
+
+tech_energy_lance_1 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_lasers_5" "tech_battleships" }
+	weight = @tier4weight2
+
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_energy_lance_2 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_energy_lance_1" }
+	weight = @tier4weight3
+	
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# ##################
+# Energy Torpedo Weapons
+# ##################
+
+tech_energy_torpedoes_1 = {
+	area = physics
+	cost = @tier3cost3
+	tier = 3
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_cruisers" }
+	weight = @tier3weight3
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				has_technology = "tech_lasers_1"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+tech_energy_torpedoes_2 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_battleships" "tech_energy_torpedoes_1" }
+	weight = @tier4weight2
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# ##################
+# Laser Weapons
+# ##################
+
+# Red Lasers
+tech_lasers_1 = {
+	area = physics
+	tier = 0
+	category = { particles }
+	ai_update_type = military
+	start_tech = yes
+}
+
+# Blue Lasers
+tech_lasers_2 = {
+	area = physics
+	cost = @tier1cost2
+	tier = 1
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_lasers_1" }
+	weight = @tier1weight2
+	
+	is_reverse_engineerable = yes
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+}
+
+# UV Lasers
+tech_lasers_3 = {
+	area = physics
+	cost = @tier2cost1
+	tier = 2
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_lasers_2" }
+	weight = @tier2weight1
+	
+	is_reverse_engineerable = yes
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+}
+
+# X-Ray Lasers
+tech_lasers_4 = {
+	area = physics
+	cost = @tier3cost1
+	tier = 3
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_lasers_3" }
+	weight = @tier3weight1
+	
+	is_reverse_engineerable = yes
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+}
+
+# Gamma Lasers
+tech_lasers_5 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4	
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_lasers_4" }
+	weight = @tier4weight1
+	
+	is_reverse_engineerable = no
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_lasers
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_lasers
+		}
+	}
+}
+
+# ##################
+# Plasma Weapons
+# ##################
+
+tech_plasma_1 = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	category = { particles }
+	ai_update_type = military
+	weight = @tier2weight2
+	
+	is_reverse_engineerable = yes
+	
+	prerequisites = { "tech_aso_sc_weapon_t1_spec" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+}
+
+tech_plasma_2 = {
+	area = physics
+	cost = @tier3cost1
+	tier = 3
+	category = { particles }
+	ai_update_type = military
+	prerequisites = { "tech_plasma_1" }
+	weight = @tier3weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+}
+
+tech_plasma_3 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 4
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_plasma_2" }
+	weight = @tier4weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+}
+
+tech_aso_sc_plasma_4 = {
+	area = physics
+	cost = @tier5cost1
+	tier = 5
+	category = { particles }
+	ai_update_type = military
+	weight = @tier5weight1
+	
+	is_reverse_engineerable = yes
+	
+	prerequisites = { "tech_plasma_3" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_plasma }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+}
+
+tech_aso_sc_plasma_5 = {
+	area = physics
+	cost = @aso_sc_tier6cost1
+	tier = 6
+	category = { particles }
+	ai_update_type = military
+	weight = @aso_sc_tier6weight1
+	
+	is_reverse_engineerable = no
+	
+	prerequisites = { "tech_aso_sc_plasma_4" }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_plasma }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_plasma
+		}
+	}
+}
+
+# ##################
+# Plasma Battery
+# ##################
+
+# Plasma Battery
+tech_aso_sc_plasma_x_1 = {
+	area = physics
+	cost = @tier5cost2
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_aso_sc_plasma_5" "tech_battleships" }
+	weight = @tier5weight2
+
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_plasma }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# Plasma Bombard
+tech_aso_sc_plasma_x_2 = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { particles }
+	ai_update_type = military	
+	prerequisites = { "tech_aso_sc_plasma_x_1" }
+	weight = @tier5weight3
+
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_plasma }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t2_plasma
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# ##################
+# Point-Defense
+# ##################
+
+#Active Countermeasures
+tech_pd_tracking_1 = {
+	area = physics
+	tier = 0
+	category = { computing }
+	ai_update_type = military
+	start_tech = yes
+	
+	is_reverse_engineerable = yes
+}
+
+#Interlinked Support Systems
+tech_pd_tracking_2 = {
+	area = physics
+	tier = 1
+	cost = @tier1cost2
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_pd_tracking_1" }
+	weight = @tier1weight2
+	
+	is_reverse_engineerable = yes
+	
+	# unlocks point defence 2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}
+}
+
+#Predictive Algorithms
+tech_pd_tracking_3 = {
+	area = physics
+	tier = 2
+	cost = @tier2cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_pd_tracking_2" }
+	weight = @tier2weight1
+	
+	is_reverse_engineerable = yes
+	
+	# unlocks point defence 3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}
+}
+
+tech_aso_sc_pd_tracking_4 = {
+	area = physics
+	tier = 3
+	cost = @tier3cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_pd_tracking_3" }
+	weight = @tier3weight1
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_point_defense }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}
+}
+
+tech_aso_sc_pd_tracking_5 = {
+	area = physics
+	tier = 4
+	cost = @tier4cost1
+	category = { computing }
+	ai_update_type = military
+	prerequisites = { "tech_aso_sc_pd_tracking_4" }
+	weight = @tier4weight1
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_point_defense }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = aso_sc_specializations_prefer_point_defense
+		}
+	}
+}
+
+# ######################
+# Tempest Point Defense
+# ######################
+
+# Tempest Point Defense
+tech_aso_sc_point_defense_x_1 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { computing }
+	ai_update_type = military	
+	prerequisites = { "tech_aso_sc_pd_tracking_5" "tech_battleships" }
+	weight = @tier4weight2
+
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_point_defense }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+# Hellfire Point Defense
+tech_aso_sc_point_defense_x_2 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 4
+	category = { computing }
+	ai_update_type = military	
+	prerequisites = { "tech_aso_sc_point_defense_x_1" }
+	weight = @tier4weight3
+
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_point_defense }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_t1_point_defense
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}

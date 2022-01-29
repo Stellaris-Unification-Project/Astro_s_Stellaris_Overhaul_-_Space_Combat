@@ -1,0 +1,239 @@
+#####################################################
+#### New SPECIALIZATIONS technologies            ####
+#####################################################
+#
+# tech_aso_sc_weapon_t1_spec: Choose a Tier 1 Weapon Specialization
+# tech_aso_sc_weapon_t2_spec: Choose a Tier 2 Weapon Specialization
+# tech_aso_sc_defense_spec: Choose a Defense Specialization
+#
+tech_aso_sc_weapon_t1_spec = {
+	area = society
+	cost = @tier3cost1
+	tier = 1
+	category = { military_theory }
+	ai_update_type = all
+	weight = @tier3weight1
+	is_rare = yes
+
+	feature_flags = { aso_sc_tier1_specialization }
+	
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = "tech_lasers_3"
+				has_technology = "tech_mass_drivers_3"
+				has_technology = "tech_missiles_3"
+				has_technology = "tech_pd_tracking_3"
+				has_technology = "tech_flak_batteries_3"
+				has_technology = "tech_strike_craft_3"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_lasers_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_mass_drivers_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_missiles_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_pd_tracking_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_flak_batteries_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_strike_craft_3"
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+tech_aso_sc_weapon_t2_spec = {
+	area = society
+	cost = @tier4cost1
+	tier = 3
+	category = { military_theory }
+	ai_update_type = all
+	prerequisites = { "tech_aso_sc_weapon_t1_spec" }
+	weight = @tier4weight1
+	is_rare = yes
+
+	feature_flags = { aso_sc_tier2_specialization }
+	
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = "tech_plasma_3"
+				has_technology = "tech_disruptors_3"
+				has_technology = "tech_torpedoes_3"
+				has_technology = "tech_aso_sc_swarmer_missiles_3"
+				has_technology = "tech_autocannons_3"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_technology = "tech_aso_sc_weapon_t1_spec" }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_plasma_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_disruptors_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_torpedoes_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_aso_sc_swarmer_missiles_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_autocannons_3"
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+tech_aso_sc_defense_spec = {
+	area = society
+	cost = @tier2cost1
+	tier = 2
+	category = military_theory
+	ai_update_type = all
+	weight = @tier2weight1
+	is_rare = yes
+	
+	feature_flags = { aso_sc_defense_specialization }
+	
+	weight_modifier = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_aso_sc_hull_3
+				has_technology = tech_ship_armor_3
+				has_technology = tech_shields_3
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_aso_sc_hull_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_ship_armor_3"
+		}
+		modifier = {
+			factor = 1.1
+			has_technology = "tech_shields_3"
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#defenses are good
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}

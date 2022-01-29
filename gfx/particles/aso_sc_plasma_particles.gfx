@@ -1,0 +1,166 @@
+objectTypes = {
+
+	####################
+	#	Plasma
+	####################
+	
+	#4
+	#muzzle
+	pdxparticle = {
+		name = "aso_sc_plasma_4_small_muzzle_particle"
+		type = "aso_sc_plasma_4_muzzle_particle"
+	
+		scale = 0.25
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_4_medium_muzzle_particle"
+		type = "aso_sc_plasma_4_muzzle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_4_large_muzzle_particle"
+		type = "aso_sc_plasma_4_muzzle_particle"
+	
+		scale = 0.8
+	}
+	
+	#entity
+	pdxparticle = {
+		name = "small_aso_sc_plasma_4_idle_particle"
+		type = "aso_sc_plasma_4_idle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "medium_aso_sc_plasma_4_idle_particle"
+		type = "aso_sc_plasma_4_idle_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "large_aso_sc_plasma_4_idle_particle"
+		type = "aso_sc_plasma_4_idle_particle"
+	
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "small_aso_sc_plasma_4_idle_drops_particle"
+		type = "aso_sc_plasma_4_idle_drops_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "medium_aso_sc_plasma_4_idle_drops_particle"
+		type = "aso_sc_plasma_4_idle_drops_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "large_aso_sc_plasma_4_idle_drops_particle"
+		type = "aso_sc_plasma_4_idle_drops_particle"
+	
+		scale = 1.5
+	}
+	
+	#hit
+	pdxparticle = {
+		name = "aso_sc_plasma_4_small_hit_effect"
+		type = "aso_sc_plasma_4_hit_effect"
+	
+		scale = 0.35
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_4_medium_hit_effect"
+		type = "aso_sc_plasma_4_hit_effect"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_4_large_hit_effect"
+		type = "aso_sc_plasma_4_hit_effect"
+	
+		scale = 0.8
+	}
+	
+	#5
+	#muzzle
+	pdxparticle = {
+		name = "aso_sc_plasma_5_small_muzzle_particle"
+		type = "aso_sc_plasma_5_muzzle_particle"
+	
+		scale = 0.25
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_5_medium_muzzle_particle"
+		type = "aso_sc_plasma_5_muzzle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_5_large_muzzle_particle"
+		type = "aso_sc_plasma_5_muzzle_particle"
+	
+		scale = 0.8
+	}
+	
+	#entity
+	pdxparticle = {
+		name = "small_aso_sc_plasma_5_idle_particle"
+		type = "aso_sc_plasma_5_idle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "medium_aso_sc_plasma_5_idle_particle"
+		type = "aso_sc_plasma_5_idle_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "large_aso_sc_plasma_5_idle_particle"
+		type = "aso_sc_plasma_5_idle_particle"
+	
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "small_aso_sc_plasma_5_idle_drops_particle"
+		type = "aso_sc_plasma_5_idle_drops_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "medium_aso_sc_plasma_5_idle_drops_particle"
+		type = "aso_sc_plasma_5_idle_drops_particle"
+	
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "large_aso_sc_plasma_5_idle_drops_particle"
+		type = "aso_sc_plasma_5_idle_drops_particle"
+	
+		scale = 1.5
+	}
+	
+	#hit
+	pdxparticle = {
+		name = "aso_sc_plasma_5_small_hit_effect"
+		type = "aso_sc_plasma_5_hit_effect"
+	
+		scale = 0.35
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_5_medium_hit_effect"
+		type = "aso_sc_plasma_5_hit_effect"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_plasma_5_large_hit_effect"
+		type = "aso_sc_plasma_5_hit_effect"
+	
+		scale = 0.8
+	}
+}

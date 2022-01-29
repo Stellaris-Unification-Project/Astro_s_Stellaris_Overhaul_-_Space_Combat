@@ -1,0 +1,4 @@
+extra_large_strike_craft_bomber = {
+	size = extra_large
+	component = strike_craft
+}

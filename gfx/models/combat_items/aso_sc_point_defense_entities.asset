@@ -1,0 +1,53 @@
+#######
+# Point Defence
+#######
+
+#4
+#muzzle
+entity = {
+	name = "aso_sc_point_defense_4_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.1 looping = no
+		event = { time = 0 particle = "aso_sc_point_defense_4_muzzle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "point_defense_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_point_defense_fire" } }	
+	}
+}
+
+#hit
+entity = {
+	name = "aso_sc_point_defense_4_hit_entity"
+	cull_radius = 50.0
+	default_state = "idle"
+	state = { name = "idle" 
+		event = { time = 0.0 particle = "aso_sc_point_defense_4_hit_effect" }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#5
+#muzzle
+entity = {
+	name = "aso_sc_point_defense_5_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.1 looping = no
+		event = { time = 0 particle = "aso_sc_point_defense_5_muzzle_particle" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "point_defense_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_point_defense_fire" } }	
+	}
+}
+
+#hit
+entity = {
+	name = "aso_sc_point_defense_5_hit_entity"
+	cull_radius = 50.0
+	default_state = "idle"
+	state = { name = "idle" 
+		event = { time = 0.0 particle = "aso_sc_point_defense_5_hit_effect" }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

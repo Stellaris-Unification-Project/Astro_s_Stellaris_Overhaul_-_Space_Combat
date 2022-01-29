@@ -1,0 +1,97 @@
+### Icons set here are the ones shown in compnent editor list.
+
+component_set = {
+	key = "ASO_SC_MISSILE_X_1"
+	icon = "GFX_ship_part_aso_sc_missile_x_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_MISSILE_X_2"
+	icon = "GFX_ship_part_aso_sc_missile_x_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_STRIKE_CRAFT_X_1"
+	icon = "GFX_ship_part_aso_sc_strike_craft_x_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_STRIKE_CRAFT_X_2"
+	icon = "GFX_ship_part_aso_sc_strike_craft_x_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_FLAK_X_1"
+	icon = "GFX_ship_part_aso_sc_flak_x_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_FLAK_X_2"
+	icon = "GFX_ship_part_aso_sc_flak_x_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_POINT_DEFENSE_X_1"
+	icon = "GFX_ship_part_aso_sc_point_defense_x_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_POINT_DEFENSE_X_2"
+	icon = "GFX_ship_part_aso_sc_point_defense_x_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_PLASMA_X_1"
+	icon = "GFX_ship_part_aso_sc_plasma_x_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_PLASMA_X_2"
+	icon = "GFX_ship_part_aso_sc_plasma_x_2"
+	icon_frame = 1
+}
+	
+component_set = {
+	key = "ASO_SC_AUTOCANNON_X_1"
+	icon = "GFX_ship_part_aso_sc_autocannon_x_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_AUTOCANNON_X_2"
+	icon = "GFX_ship_part_aso_sc_autocannon_x_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_SWARMER_X_1"
+	icon = "GFX_ship_part_aso_sc_swarmer_x_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_SWARMER_X_2"
+	icon = "GFX_ship_part_aso_sc_swarmer_x_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_TORPEDO_X_1"
+	icon = "GFX_ship_part_aso_sc_torpedo_x_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_TORPEDO_X_2"
+	icon = "GFX_ship_part_aso_sc_torpedo_x_2"
+	icon_frame = 1
+}

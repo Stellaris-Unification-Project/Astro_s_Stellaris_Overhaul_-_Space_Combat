@@ -1,0 +1,30 @@
+objectTypes = {
+
+	####################
+	#	Swarmer Missile
+	####################
+	
+	#3
+	pdxparticle = {
+		name = "aso_sc_swarmer_missiles_3_idle_particle"
+		type = "aso_sc_swarmer_missiles_3_idle_particle"
+	
+		scale = 1.0
+	}
+	
+	#4
+	pdxparticle = {
+		name = "aso_sc_swarmer_missiles_4_idle_particle"
+		type = "aso_sc_swarmer_missiles_4_idle_particle"
+	
+		scale = 1.0
+	}
+	
+	#5
+	pdxparticle = {
+		name = "aso_sc_swarmer_missiles_5_idle_particle"
+		type = "aso_sc_swarmer_missiles_5_idle_particle"
+	
+		scale = 1.0
+	}
+}

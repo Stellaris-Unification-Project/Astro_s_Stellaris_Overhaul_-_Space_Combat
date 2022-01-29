@@ -1,0 +1,21 @@
+on_destroy_planet_with_aso_sc_MACHINEWORLD_BEAM = {
+	events = {
+		aso_sc_planetkiller.100 # Various Cleanup - Opinion Modifiers, Observation Stations, War Exhaustion, etc.
+		planet_destruction.600 # Anger Spiritualist FE if Holy World
+	}
+}
+
+on_destroy_planet_with_aso_sc_HIVEWORLD_BEAM = {
+	events = {
+		aso_sc_planetkiller.200 # Various Cleanup - Opinion Modifiers, Observation Stations, War Exhaustion, etc.
+		planet_destruction.600 # Anger Spiritualist FE if Holy World
+	}
+}
+
+on_tech_increased = {
+	events = {
+		aso_sc_specializations.1 # First Specialization Choice
+		aso_sc_specializations.2 # Second Specialization Choice
+		aso_sc_specializations.3 # Defense Specialization Choice
+	}
+}

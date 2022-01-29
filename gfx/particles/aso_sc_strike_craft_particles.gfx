@@ -1,0 +1,14 @@
+objectTypes = {
+	####################
+	#	Strike Craft Lasers
+	####################
+	
+	#4
+	#hit
+	pdxparticle = {
+		name = "aso_sc_strike_craft_laser_4_small_hit_effect"
+		type = "aso_sc_strike_craft_laser_4_hit_effect"
+	
+		scale = 0.5
+	}
+}

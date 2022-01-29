@@ -1,0 +1,36 @@
+#All files in gfx/projectiles are reloadable with the "reload projectiles" console command
+#Filewatcher is also enabled for all files
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "aso_sc_missile_x_1"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "aso_sc_missile_x_1_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "missile_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "aso_sc_missile_x_1_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "aso_sc_missile_x_2"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "aso_sc_missile_x_2_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "missile_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "aso_sc_missile_x_2_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

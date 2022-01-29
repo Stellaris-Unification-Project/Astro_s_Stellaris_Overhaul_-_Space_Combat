@@ -1,0 +1,113 @@
+######################################
+# New Planetkiller Techs
+######################################
+#
+# Machine World Beam: Terraforms into Machine World
+# Hive World Beam: Terraforms into Hive World
+#
+# Machine World Beam
+tech_aso_sc_machineworld_beam = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { new_worlds }
+	prerequisites = { "tech_colossus" }
+	ai_update_type = military
+	weight = @tier5weight3
+	
+	potential = {
+		has_authority = auth_machine_intelligence
+		has_country_flag = colossus_project
+		has_ascension_perk = ap_machine_worlds
+	}
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_aso_sc_machineworld_beam }
+			}
+		}
+		modifier = {
+			factor = 0.20
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_new_worlds"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+	}
+	ai_weight = { weight = 9999 }
+}
+
+
+# Hive World Beam
+tech_aso_sc_hiveworld_beam = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { new_worlds }
+	prerequisites = { "tech_colossus" }
+	ai_update_type = military
+	weight = @tier5weight3
+	
+	potential = {
+		has_authority = auth_hive_mind
+		has_country_flag = colossus_project
+		has_ascension_perk = ap_hive_worlds
+	}
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_aso_sc_machineworld_beam }
+			}
+		}
+		modifier = {
+			factor = 0.20
+			NOR = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_new_worlds"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+	}
+	ai_weight = { weight = 9999 }
+}

@@ -1,0 +1,188 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_autocannon_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_autocannon_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_autocannon_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_autocannon_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_disruptor_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_disruptor_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_disruptor_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_disruptor_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_flak_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_flak_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_flak_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_flak_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_plasma_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_plasma_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_plasma_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_plasma_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_point_defense_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_point_defense_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_point_defense_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_point_defense_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_strike_craft_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_strike_craft_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_swarmer_missile_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_swarmer_missile_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_swarmer_missile_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_swarmer_missile_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_swarmer_missile_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_swarmer_missile_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_torpedo_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_torpedo_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_torpedo_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_torpedo_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hull_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hull_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hull_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hull_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hull_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hull_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hull_4"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hull_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hull_5"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hull_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_machineworld_beam"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_machineworld_beam.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_hiveworld_beam"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_hiveworld_beam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_missile_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_missile_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_missile_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_missile_x_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_strike_craft_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_strike_craft_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_strike_craft_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_strike_craft_x_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_flak_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_flak_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_flak_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_flak_x_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_point_defense_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_point_defense_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_point_defense_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_point_defense_x_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_autocannon_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_autocannon_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_autocannon_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_autocannon_x_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_swarmer_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_swarmer_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_swarmer_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_swarmer_x_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_torpedo_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_torpedo_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_torpedo_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_torpedo_x_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_plasma_x_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_plasma_x_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aso_sc_plasma_x_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_aso_sc_plasma_x_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_starbase_building_aso_sc_communications_relay"
+		texturefile = "gfx/interface/icons/modules/starbase_building_aso_sc_communications_relay.dds"
+	}
+}

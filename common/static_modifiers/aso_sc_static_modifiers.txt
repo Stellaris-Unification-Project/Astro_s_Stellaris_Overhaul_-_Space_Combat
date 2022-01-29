@@ -1,0 +1,38 @@
+####################
+# STATIC MODIFIERS #
+####################
+#
+## Military Specializations
+# Lasers
+# Mass Drivers
+# Missiles
+# Strike Craft
+# Flak
+# Point Defense
+# Plasma
+# Disruptors
+# Autocannons
+# Swarmers
+# Torpedoes
+# Armor
+# Hull
+# Shields
+# 
+
+#####
+# Military Specializations
+#####
+mod_aso_sc_specializations_t1_lasers = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_lasers.dds" }
+mod_aso_sc_specializations_t1_mass_drivers = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_mass_drivers.dds" }
+mod_aso_sc_specializations_t1_missiles = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_missiles.dds" }
+mod_aso_sc_specializations_t1_strike_craft = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_strike_craft.dds" }
+mod_aso_sc_specializations_t1_flak = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_flak.dds" }
+mod_aso_sc_specializations_t1_point_defense = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t1_point_defense.dds" }
+mod_aso_sc_specializations_t2_plasma = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t2_plasma.dds" }
+mod_aso_sc_specializations_t2_disruptors = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t2_disruptors.dds" }
+mod_aso_sc_specializations_t2_autocannons = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t2_autocannons.dds" }
+mod_aso_sc_specializations_t2_swarmers = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t2_swarmers.dds" }
+mod_aso_sc_specializations_t2_torpedoes = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_t2_torpedoes.dds" }
+mod_aso_sc_specializations_armor = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_armor.dds" }
+mod_aso_sc_specializations_hull = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_hull.dds" }
+mod_aso_sc_specializations_shields = { icon = "gfx/interface/icons/modifiers/mod_aso_sc_specializations_shields.dds" }

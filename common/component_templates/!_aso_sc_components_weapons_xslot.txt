@@ -1,0 +1,904 @@
+# ####################
+#  Energy Lance
+# ####################
+
+# ## Energy Lance 1
+weapon_component_template = {
+	key = "ENERGY_LANCE_1"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_energy_lance_1"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_energy_lance_1" }
+	component_set = "ENERGY_LANCE_1"
+	projectile_gfx = "particle_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "ENERGY_LANCE_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			rare_crystals = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+}
+
+# ## Energy Lance 2
+weapon_component_template = {
+	key = "ENERGY_LANCE_2"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_energy_lance_2"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_energy_lance_2" }
+	component_set = "ENERGY_LANCE_2"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			rare_crystals = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+# ####################
+#  Arc Emitter
+# ####################
+
+# ## Arc Emitter 1
+weapon_component_template = {
+	key = "ARC_EMITTER_1"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_arc_emitter_1"
+	icon_frame = 1
+	
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_arc_emitter_1" }
+	component_set = "ARC_EMITTER_1"
+	projectile_gfx = "arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "ARC_EMITTER_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			rare_crystals = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+}
+
+# ## Arc Emitter 2
+weapon_component_template = {
+	key = "ARC_EMITTER_2"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_arc_emitter_2"
+	icon_frame = 1
+	
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_arc_emitter_2" }
+	component_set = "ARC_EMITTER_2"
+	projectile_gfx = "focused_arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			rare_crystals = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+# ####################
+#  Mass Accelerator
+# ####################
+
+# ## Mass Accelerator 1
+weapon_component_template = {
+	type = instant
+	
+	key = "MASS_ACCELERATOR_1"
+	size = extra_large
+	
+	icon = "GFX_ship_part_mass_accelerator_1"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_mass_accelerator_1" }
+	component_set = "MASS_ACCELERATOR_1"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MASS_ACCELERATOR_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+}
+
+# ## Mass Accelerator 2
+weapon_component_template = {
+	type = instant
+	
+	key = "MASS_ACCELERATOR_2"
+	size = extra_large
+	
+	icon = "GFX_ship_part_mass_accelerator_2"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_mass_accelerator_2" }
+	component_set = "MASS_ACCELERATOR_2"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+# ####################
+#  Titan Laser
+# ####################
+
+# ## Perdition Beam
+weapon_component_template = {
+	key = "PERDITION_BEAM_TITAN"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_perdition_beam"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+	
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_titans" }
+	component_set = "PERDITION_BEAM"
+	projectile_gfx = "perdition_beam"
+	size_restriction = { titan }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @titanic_t6_upkeep_energy
+			alloys = @titanic_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+# ## Perdition Beam
+weapon_component_template = {
+	key = "PERDITION_BEAM_ION"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_perdition_beam"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+	
+	tags = { weapon_type_energy }
+
+	prerequisites = { "tech_titans" }
+	component_set = "PERDITION_BEAM"
+	projectile_gfx = "ion_cannon"
+	size_restriction = { ion_cannon }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @titanic_t6_upkeep_energy
+			alloys = @titanic_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+# ## Titan Lance
+weapon_component_template = {
+	key = "TITAN_LASER"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+	
+	hidden = yes
+	
+	icon = "GFX_ship_part_energy_lance_2"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 30.0
+	use_ship_kill_target = no
+	
+	tags = { weapon_type_energy }
+
+	component_set = "TITAN_LASER"
+	projectile_gfx = "titan_laser"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t6_cost
+			rare_crystals = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @titanic_t6_upkeep_energy
+			alloys = @titanic_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+}
+
+############################################################
+##                 NEW X-Sized Weapons                    ##
+############################################################
+
+# - Cruise Missile
+# - Planck Missile
+# - Heavy Bomber
+# - Phasing Bomber
+# - Flak Cyclone
+# - Flak Constellation
+# - Tempest Point Defense
+# - Hellfire Point Defense
+
+# - Plasma Battery
+# - Plasma Bombard
+# - Thunderstorm Autocannon
+# - Firestorm Autocannon
+# - Horde Swarmer Missile
+# - Throng Swarmer Missile
+# - Stealth Torpedo
+# - Femto Torpedo
+
+############################################################
+##                     Cruise Missile                     ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_MISSILE_X_1"
+	icon = "GFX_ship_part_aso_sc_missile_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_missile_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_missile_x_1" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_MISSILE_X_1"
+	upgrades_to = "ASO_SC_MISSILE_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Planck Missile                     ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_MISSILE_X_2"
+	icon = "GFX_ship_part_aso_sc_missile_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_missile_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_missile_x_2" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_MISSILE_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Heavy Bomber                       ##
+############################################################
+
+strike_craft_component_template = {
+	key = "ASO_SC_STRIKE_CRAFT_X_1"
+	size = extra_large
+	entity = "aso_sc_strike_craft_x_1_entity"
+	
+	weapon_type = point_defence
+	#weapon_type = instant
+	projectile_gfx = "proton_torpedoes"
+	#projectile_gfx = "strike_craft_laser_3"
+	
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	count = 2
+	regeneration_per_day = 1
+	launch_time = 3.0
+
+	damage = { min = 400 max = 800 }
+	cooldown = 4.6
+	range = 40
+	engagement_range = 150
+	accuracy = 0.95
+	tracking = 0.035
+	
+	health = 105
+	armor = 0
+	shield = 35
+	evasion = 0.85
+	
+	speed = 750
+	rotation_speed = 0.8
+	acceleration = 1
+	
+	shield_penetration = 1.0
+	armor_damage = 1.5
+
+	ship_behavior = "aso_sc_bombers_behavior"
+	
+	icon = "GFX_ship_part_aso_sc_strike_craft_x_1"
+	icon_frame = 1
+	component_set = "ASO_SC_STRIKE_CRAFT_X_1"	
+	prerequisites = { "tech_aso_sc_strike_craft_x_1" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "ASO_SC_STRIKE_CRAFT_X_2"
+	ai_tags = { weapon_role_point_defense }
+}
+
+############################################################
+##                     Phasing Bomber                       ##
+############################################################
+
+strike_craft_component_template = {
+	key = "ASO_SC_STRIKE_CRAFT_X_2"
+	size = extra_large
+	entity = "aso_sc_strike_craft_x_1_entity"
+	
+	weapon_type = point_defence
+	#weapon_type = instant
+	projectile_gfx = "neutron_torpedoes"
+	#projectile_gfx = "aso_sc_strike_craft_laser_4"
+	
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	count = 2
+	regeneration_per_day = 1
+	launch_time = 3.0
+
+	damage = { min = 600 max = 1200 }
+	cooldown = 4.6
+	range = 40
+	engagement_range = 150
+	accuracy = 0.95
+	tracking = 0.035
+	
+	health = 120
+	armor = 0
+	shield = 40
+	evasion = 0.9
+	
+	speed = 800
+	rotation_speed = 0.8
+	acceleration = 1
+	
+	shield_penetration = 1.0
+	armor_damage = 1.5
+
+	ship_behavior = "aso_sc_bombers_behavior"
+	
+	icon = "GFX_ship_part_aso_sc_strike_craft_x_2"
+	icon_frame = 1
+	component_set = "ASO_SC_STRIKE_CRAFT_X_2"	
+	prerequisites = { "tech_aso_sc_strike_craft_x_2" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+}
+
+############################################################
+##                     Flak Cyclone                       ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_FLAK_X_1"
+	icon = "GFX_ship_part_aso_sc_flak_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = point_defence
+	projectile_gfx = "aso_sc_flak_x_1"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_flak_x_1" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_FLAK_X_1"
+	upgrades_to = "ASO_SC_FLAK_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Flak Constellation                 ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_FLAK_X_2"
+	icon = "GFX_ship_part_aso_sc_flak_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = point_defence
+	projectile_gfx = "aso_sc_flak_x_1"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_flak_x_2" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_FLAK_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Tempest Point Defense              ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_POINT_DEFENSE_X_1"
+	icon = "GFX_ship_part_aso_sc_point_defense_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = point_defence
+	projectile_gfx = "aso_sc_point_defense_x_1"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_point_defense_x_1" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_POINT_DEFENSE_X_1"
+	upgrades_to = "ASO_SC_POINT_DEFENSE_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Hellfire Point Defense             ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_POINT_DEFENSE_X_2"
+	icon = "GFX_ship_part_aso_sc_point_defense_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = point_defence
+	projectile_gfx = "aso_sc_point_defense_x_1"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_point_defense_x_2" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_POINT_DEFENSE_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Plasma Battery                     ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_PLASMA_X_1"
+	icon = "GFX_ship_part_aso_sc_plasma_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = instant
+	projectile_gfx = "aso_sc_plasma_x_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_plasma_x_1" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			exotic_gases = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_PLASMA_X_1"
+	upgrades_to = "ASO_SC_PLASMA_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Plasma Bombard                     ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_PLASMA_X_2"
+	icon = "GFX_ship_part_aso_sc_plasma_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = instant
+	projectile_gfx = "aso_sc_plasma_x_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_plasma_x_2" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			exotic_gases = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_PLASMA_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Thunderstorm Autocannon            ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_AUTOCANNON_X_1"
+	icon = "GFX_ship_part_aso_sc_autocannon_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = instant
+	projectile_gfx = "aso_sc_autocannon_x_1"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	prerequisites = { "tech_aso_sc_autocannon_x_1" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_AUTOCANNON_X_1"
+	upgrades_to = "ASO_SC_AUTOCANNON_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Firestorm Autocannon               ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_AUTOCANNON_X_2"
+	icon = "GFX_ship_part_aso_sc_autocannon_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = instant
+	projectile_gfx = "aso_sc_autocannon_x_1"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	prerequisites = { "tech_aso_sc_autocannon_x_2" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_AUTOCANNON_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Horde Swarmer Missile              ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_SWARMER_X_1"
+	icon = "GFX_ship_part_aso_sc_swarmer_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_swarmer_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_swarmer_x_1" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_SWARMER_X_1"
+	upgrades_to = "ASO_SC_SWARMER_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Throng Swarmer Missile             ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_SWARMER_X_2"
+	icon = "GFX_ship_part_aso_sc_swarmer_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_swarmer_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	prerequisites = { "tech_aso_sc_swarmer_x_2" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_SWARMER_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Stealth Torpedo                    ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_TORPEDO_X_1"
+	icon = "GFX_ship_part_aso_sc_torpedo_x_1"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_torpedo_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery weapon_role_anti_shield }
+	prerequisites = { "tech_aso_sc_torpedo_x_1" }
+	power = -200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			volatile_motes = @xl_t5_rare
+		}
+		upkeep = {
+			energy = @xl_t5_upkeep_energy
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 5 }
+	component_set = "ASO_SC_TORPEDO_X_1"
+	upgrades_to = "ASO_SC_TORPEDO_X_2"
+	should_ai_use = yes
+}
+
+############################################################
+##                     Femto Torpedo                      ##
+############################################################
+
+weapon_component_template = {
+	key = "ASO_SC_TORPEDO_X_2"
+	icon = "GFX_ship_part_aso_sc_torpedo_x_2"
+	icon_frame = 1
+	size = extra_large
+	type = missile
+	projectile_gfx = "aso_sc_torpedo_x_1"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery weapon_role_anti_shield }
+	prerequisites = { "tech_aso_sc_torpedo_x_2" }
+	power = -250
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			volatile_motes = @xl_t6_rare
+		}
+		upkeep = {
+			energy = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	ai_weight = { weight = 100 }
+	component_set = "ASO_SC_TORPEDO_X_2"
+	should_ai_use = yes
+}

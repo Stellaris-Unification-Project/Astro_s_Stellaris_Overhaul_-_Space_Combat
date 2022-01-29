@@ -1,0 +1,111 @@
+	NGameplay = {
+#		FALLEN_EMPIRE_REPEATABLE_TECHS  = 10
+		FALLEN_EMPIRE_REPEATABLE_TECHS  = 1
+
+#		DEBRIS_ANALYZED_AREA_POINTS			= 20	# Points * Level given for each component analyzed
+		DEBRIS_ANALYZED_AREA_POINTS			= 30	# Points * Level given for each component analyzed
+
+#		DEBRIS_RESEARCH_TIME				= 90	# How many days it takes to analyze 1 debris.
+		DEBRIS_RESEARCH_TIME				= 135	# How many days it takes to analyze 1 debris.
+
+		# Bombardment damage to planets from ships
+#		ORBITAL_BOMBARDMENT_ARMY_DMG_SCALE				= 0.02
+		ORBITAL_BOMBARDMENT_ARMY_DMG_SCALE				= 0.015
+
+#		ORBITAL_BOMBARDMENT_ASSAULT_ARMY_DAMAGE_MULT	= 5.00	# Assault armies take this much more damage from orbital bombardment
+		ORBITAL_BOMBARDMENT_ASSAULT_ARMY_DAMAGE_MULT	= 3.00	# Assault armies take this much more damage from orbital bombardment
+
+#		ORBITAL_BOMBARDMENT_KILL_POP_CHANCE				= 0.3	# Multiplied by stance & damage dealt
+		ORBITAL_BOMBARDMENT_KILL_POP_CHANCE				= 0.45	# Multiplied by stance & damage dealt
+
+		# Collateral damage to planet from armies
+#		COLLATERAL_DAMAGE_CHANCE						= 0.10	# Chance that an army causes collateral damage while dealing damage to an enemy army
+		COLLATERAL_DAMAGE_CHANCE						= 0.15	# Chance that an army causes collateral damage while dealing damage to an enemy army
+		
+#		COLLATERAL_DAMAGE_KILL_POP_CHANCE				= 0.1	# Multiplied by damage dealt
+		COLLATERAL_DAMAGE_KILL_POP_CHANCE				= 0.15	# Multiplied by damage dealt
+		
+#		PLANET_COMBAT_WIDTH_BASE				= 5 # Maximum number of troops that can fight at the same time
+		PLANET_COMBAT_WIDTH_BASE				= 7 # Maximum number of troops that can fight at the same time
+
+#		PLANET_COMBAT_WIDTH_FROM_SIZE 			= 0.2 # Extra combat width per tile
+		PLANET_COMBAT_WIDTH_FROM_SIZE 			= 0.3 # Extra combat width per tile
+		
+#		GENERAL_DEATH_CHANCE					= 0.05	# Chance that general dies when an army under command is destroyed (scaled to number of armies)
+		GENERAL_DEATH_CHANCE					= 0.01	# Chance that general dies when an army under command is destroyed (scaled to number of armies)
+
+#		STARBASE_CAPACITY_POP_MULT				= 0.00	# Mult value of Starbase Capacity for each Pop
+		STARBASE_CAPACITY_POP_MULT				= 0.01	# Mult value of Starbase Capacity for each Pop
+
+#		EVADE_HOSTILE_CANCEL_ORDERS_THRESHOLD_DAYS = 180	# When evading hostiles ships will cancel orders that would take more than X days to reach.
+		EVADE_HOSTILE_CANCEL_ORDERS_THRESHOLD_DAYS = 1800	# When evading hostiles ships will cancel orders that would take more than X days to reach.
+	}
+
+	NShip = {
+
+#		ABANDONED_STATION_DECAY_RATE		= 0.003		# Abandoned stations lose this amount of health per day
+		ABANDONED_STATION_DECAY_RATE		= 0.001		# Abandoned stations lose this amount of health per day
+
+#		SHIP_MAX_EVASION					= 0.9		# The maximum evasion value a ship is allowed to have (percent)
+		SHIP_MAX_EVASION					= 0.99		# The maximum evasion value a ship is allowed to have (percent)
+
+#		DEFAULT_ARMOR_RATIO = 0.4
+		DEFAULT_ARMOR_RATIO = 0.33
+
+#		DEFAULT_SHIELD_RATIO = 0.5
+		DEFAULT_SHIELD_RATIO = 0.33
+
+#		SHIP_EXP_GAIN_COMBAT			= 1.0				# Gained each day ship is in combat
+		SHIP_EXP_GAIN_COMBAT			= 1.5				# Gained each day ship is in combat
+		
+#		SHIP_EXP_GAIN_PIRACY_SUP 		= 0.1				# Gained each day ship suppressing piracy
+		SHIP_EXP_GAIN_PIRACY_SUP 		= 0.15				# Gained each day ship suppressing piracy
+	}
+
+	NCombat = {
+
+#		COMBAT_TARGET_STICKYNESS_FACTOR			= 1.5	# The higher this is, the less likely ships are to switch targets
+		COMBAT_TARGET_STICKYNESS_FACTOR			= 3.0	# The higher this is, the less likely ships are to switch targets
+
+#		RANDOM_TARGETING_WEIGHT					= 3.0	# The higher this is, the more random ship targeting will be
+		RANDOM_TARGETING_WEIGHT					= 1.5	# The higher this is, the more random ship targeting will be
+
+#		COMBAT_SHIP_STARBASE_TARGETING_WEIGHT = 0.75	# The lower this is, the less likely ships are to target Starbases over military ships & defensive platforms
+		COMBAT_SHIP_STARBASE_TARGETING_WEIGHT = 0.50	# The lower this is, the less likely ships are to target Starbases over military ships & defensive platforms
+	}
+	
+	NArmy = {
+
+#		BASE_HEALTH						= 200.0				# Base health
+		BASE_HEALTH						= 300.0				# Base health
+		
+#		BASE_MORALE						= 200.0				# Base morale
+		BASE_MORALE						= 300.0				# Base morale
+
+#		ARMY_EXP_GAIN_DAMAGE_DEALT		= 2.0				# Gained each time army deals damage
+		ARMY_EXP_GAIN_DAMAGE_DEALT		= 3.0				# Gained each time army deals damage
+
+#		ARMY_EXP_GAIN_DAMAGE_TAKEN		= 1.0				# Gained each time army takes damage
+		ARMY_EXP_GAIN_DAMAGE_TAKEN		= 1.5				# Gained each time army takes damage
+	}
+
+	NAI = {
+
+#		MIN_DISTANCE_TO_JUMP = 3					# Target must be at least this many systems away for AI to want to use jump drive
+		MIN_DISTANCE_TO_JUMP = 2					# Target must be at least this many systems away for AI to want to use jump drive
+
+#		BOSS_MILITARY_POWER = 40000			# The military power at which AI feels safe to engage a 'boss' creature
+		BOSS_MILITARY_POWER = 30000			# The military power at which AI feels safe to engage a 'boss' creature
+
+#		MAX_ASSAULT_ARMIES = 60
+		MAX_ASSAULT_ARMIES = 120		
+
+#		ASSAULT_ARMIES_PER_POP = 0.1
+		ASSAULT_ARMIES_PER_POP = 0.05
+
+#		ENEMY_FLEET_POWER_MULT = 1.2			# AI will need the fleet power of the enemy multiplied by this value to become offensive in an offensive war
+		ENEMY_FLEET_POWER_MULT = 1.0			# AI will need the fleet power of the enemy multiplied by this value to become offensive in an offensive war
+
+#		TRANSPORT_FLEET_SIZE = 20					# AI will have transport fleets of this size
+		TRANSPORT_FLEET_SIZE = 30					# AI will have transport fleets of this size
+	}

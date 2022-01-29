@@ -1,0 +1,11 @@
+component_set = { # Machine World Beam
+	key = "ASO_SC_MACHINEWORLD_BEAM"
+	icon = "GFX_ship_part_aso_sc_machineworld_beam"
+	icon_frame = 1
+}
+
+component_set = { # Hive World Beam
+	key = "ASO_SC_HIVEWORLD_BEAM"
+	icon = "GFX_ship_part_aso_sc_hiveworld_beam"
+	icon_frame = 1
+}

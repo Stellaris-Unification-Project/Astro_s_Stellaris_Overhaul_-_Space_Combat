@@ -1,0 +1,171 @@
+#####################
+#  Flak Battery
+#####################
+
+### Flak Battery 1
+weapon_component_template = {
+	key = "FLAK_BATTERY_1"
+	size = point_defence
+	type = point_defence
+	
+	icon = "GFX_ship_part_flak_batteries_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_flak_batteries_1" }
+	component_set = "FLAK_BATTERY_1"
+	projectile_gfx = "flak_pd_1"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	upgrades_to = "FLAK_BATTERY_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = 8 }
+		upkeep = {
+			energy = 0.08
+			alloys = 0.008
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+	}
+}
+
+### Flak Battery 2
+weapon_component_template = {
+	key = "FLAK_BATTERY_2"
+	size = point_defence
+	type = point_defence
+	
+	icon = "GFX_ship_part_flak_batteries_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_flak_batteries_2" }
+	component_set = "FLAK_BATTERY_2"
+	projectile_gfx = "flak_pd_2"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	upgrades_to = "FLAK_BATTERY_3"
+	resources = {
+		category = ship_components
+		cost = { alloys = 10 }
+		upkeep = {
+			energy = 0.10
+			alloys = 0.010
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+	}
+}
+
+
+#####################
+#  NEW Flak Battery
+#####################
+
+### Flak Battery 3
+weapon_component_template = {
+	key = "FLAK_BATTERY_3"
+	size = point_defence
+	type = point_defence
+	
+	icon = "GFX_ship_part_flak_batteries_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_flak_batteries_3" }
+	component_set = "FLAK_BATTERY_3"
+	projectile_gfx = "flak_pd_3"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = { alloys = 13 }
+		upkeep = {
+			energy = 0.13
+			alloys = 0.013
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+	}
+	upgrades_to = "ASO_SC_FLAK_4"
+}
+
+#4
+weapon_component_template = {
+	key = "ASO_SC_FLAK_4"
+	size = point_defence
+	type = point_defence
+
+	icon = "GFX_ship_part_aso_sc_flak_4"
+	icon_frame = 1
+
+	prerequisites = { "tech_aso_sc_flak_batteries_4" }
+	component_set = "ASO_SC_FLAK_4"
+	projectile_gfx = "aso_sc_flak_pd_4"
+	upgrades_to = "ASO_SC_FLAK_5"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = { alloys = 17 }
+		upkeep = {
+			energy = 0.17
+			alloys = 0.017
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ASO_SC_FLAK_5"
+	size = point_defence
+	type = point_defence
+
+	icon = "GFX_ship_part_aso_sc_flak_5"
+	icon_frame = 1
+
+	prerequisites = { "tech_aso_sc_flak_batteries_5" }
+	component_set = "ASO_SC_FLAK_5"
+	projectile_gfx = "aso_sc_flak_pd_5"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = { alloys = 22 }
+		upkeep = {
+			energy = 0.22
+			alloys = 0.022
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+	}
+}

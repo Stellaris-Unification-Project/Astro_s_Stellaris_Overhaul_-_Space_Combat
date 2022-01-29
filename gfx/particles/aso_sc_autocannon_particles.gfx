@@ -1,0 +1,36 @@
+objectTypes = {
+
+	####################
+	#	Auto-Cannon
+	####################
+	
+	#4
+	pdxparticle = {
+		name = "aso_sc_auto_cannons_4_small_muzzle_particle"
+		type = "aso_sc_auto_cannons_4_muzzle_particle"
+	
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_auto_cannons_4_small_hit_effect"
+		type = "aso_sc_auto_cannons_4_hit_effect"
+	
+		scale = 0.5
+	}
+	
+	#5
+	pdxparticle = {
+		name = "aso_sc_auto_cannons_5_small_muzzle_particle"
+		type = "aso_sc_auto_cannons_5_muzzle_particle"
+	
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_auto_cannons_5_small_hit_effect"
+		type = "aso_sc_auto_cannons_5_hit_effect"
+	
+		scale = 0.5
+	}
+}

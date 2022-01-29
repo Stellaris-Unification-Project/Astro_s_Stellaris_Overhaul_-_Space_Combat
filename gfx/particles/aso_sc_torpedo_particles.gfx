@@ -1,0 +1,62 @@
+objectTypes = {
+
+	####################
+	#	Torpedo
+	####################
+	
+	#4
+	pdxparticle = {
+		name = "aso_sc_torpedo_4_large_muzzle_particle"
+		type = "aso_sc_torpedo_4_muzzle_particle"
+	
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_torpedo_4_large_idle_particle"
+		type = "aso_sc_torpedo_4_idle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_torpedo_4_large_idle_flame_particle"
+		type = "aso_sc_torpedo_4_idle_flame_particle"
+	
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_torpedo_4_large_hit_effect"
+		type = "aso_sc_torpedo_4_hit_effect"
+	
+		scale = 0.75
+	}
+	
+	#5
+	pdxparticle = {
+		name = "aso_sc_torpedo_5_large_muzzle_particle"
+		type = "aso_sc_torpedo_5_muzzle_particle"
+	
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_torpedo_5_large_idle_particle"
+		type = "aso_sc_torpedo_5_idle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_torpedo_5_large_idle_flame_particle"
+		type = "aso_sc_torpedo_5_idle_flame_particle"
+	
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "aso_sc_torpedo_5_large_hit_effect"
+		type = "aso_sc_torpedo_5_hit_effect"
+	
+		scale = 0.75
+	}
+}

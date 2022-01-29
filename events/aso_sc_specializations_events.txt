@@ -1,0 +1,467 @@
+##########
+#
+# Astro's Stellaris Overhaul - Ship Components Specializations
+#
+##########
+
+namespace = aso_sc_specializations
+
+# First Specialization Choice
+country_event = {
+	id = aso_sc_specializations.1
+	title = "aso_sc_specializations.1.name"
+	desc = "aso_sc_specializations.1.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_conversation
+	
+	is_triggered_only = yes
+	
+	trigger = { last_increased_tech = "tech_aso_sc_weapon_t1_spec" }
+
+	option = {
+		name = aso_sc_specializations.1.a
+		custom_tooltip = aso_sc_specializations.1.a.tooltip
+		trigger = { has_technology = tech_lasers_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_lasers
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_lasers_4
+			set_country_flag = mod_aso_sc_specializations_t1_lasers
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_lasers"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.1.b
+		custom_tooltip = aso_sc_specializations.1.b.tooltip
+		trigger = { has_technology = tech_mass_drivers_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_mass_drivers
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_mass_drivers_4
+			set_country_flag = mod_aso_sc_specializations_t1_mass_drivers
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_mass_drivers"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.1.c
+		custom_tooltip = aso_sc_specializations.1.c.tooltip
+		trigger = { has_technology = tech_missiles_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_missiles
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_missiles_4
+			set_country_flag = mod_aso_sc_specializations_t1_missiles
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_missiles"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.1.d
+		custom_tooltip = aso_sc_specializations.1.d.tooltip
+		trigger = { has_technology = tech_strike_craft_2 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_strike_craft
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_strike_craft_3
+			set_country_flag = mod_aso_sc_specializations_t1_strike_craft
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_strike_craft"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.1.e
+		custom_tooltip = aso_sc_specializations.1.e.tooltip
+		trigger = { has_technology = tech_flak_batteries_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_flak
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_flak_batteries_4
+			set_country_flag = mod_aso_sc_specializations_t1_flak
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_flak"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.1.f
+		custom_tooltip = aso_sc_specializations.1.f.tooltip
+		trigger = { has_technology = tech_pd_tracking_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_point_defense
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_pd_tracking_4
+			set_country_flag = mod_aso_sc_specializations_t1_point_defense
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_point_defense"
+				days = -1
+			}
+		}
+	}
+}
+
+# Second Specialization Choice
+country_event = {
+	id = aso_sc_specializations.2
+	title = "aso_sc_specializations.2.name"
+	desc = "aso_sc_specializations.2.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_conversation
+	
+	is_triggered_only = yes
+	
+	trigger = { last_increased_tech = "tech_aso_sc_weapon_t2_spec" }
+
+	option = {
+		name = aso_sc_specializations.2.a
+		custom_tooltip = aso_sc_specializations.2.a.tooltip
+		trigger = {
+			has_technology = tech_lasers_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_lasers
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_lasers_4
+			set_country_flag = mod_aso_sc_specializations_t1_lasers
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_lasers"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.b
+		custom_tooltip = aso_sc_specializations.2.b.tooltip
+		trigger = {
+			has_technology = tech_mass_drivers_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_mass_drivers }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_mass_drivers
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_mass_drivers_4
+			set_country_flag = mod_aso_sc_specializations_t1_mass_drivers
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_mass_drivers"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.c
+		custom_tooltip = aso_sc_specializations.2.c.tooltip
+		trigger = {
+			has_technology = tech_missiles_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_missiles
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_missiles_4
+			set_country_flag = mod_aso_sc_specializations_t1_missiles
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_missiles"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.d
+		custom_tooltip = aso_sc_specializations.2.d.tooltip
+		trigger = {
+			has_technology = tech_strike_craft_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_strike_craft
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_strike_craft_4
+			set_country_flag = mod_aso_sc_specializations_t1_strike_craft
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_strike_craft"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.e
+		custom_tooltip = aso_sc_specializations.2.e.tooltip
+		trigger = {
+			has_technology = tech_flak_batteries_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_flak }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_flak
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_flak_batteries_4
+			set_country_flag = mod_aso_sc_specializations_t1_flak
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_flak"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.f
+		custom_tooltip = aso_sc_specializations.2.f.tooltip
+		trigger = {
+			has_technology = tech_pd_tracking_3
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_point_defense }
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_point_defense
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_pd_tracking_4
+			set_country_flag = mod_aso_sc_specializations_t1_point_defense
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t1_point_defense"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.g
+		custom_tooltip = aso_sc_specializations.2.g.tooltip
+		trigger = { has_technology = tech_plasma_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_plasma
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_plasma_4
+			set_country_flag = mod_aso_sc_specializations_t2_plasma
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t2_plasma"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.h
+		custom_tooltip = aso_sc_specializations.2.h.tooltip
+		trigger = { has_technology = tech_disruptors_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_disruptors
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_disruptors_4
+			set_country_flag = mod_aso_sc_specializations_t2_disruptors
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t2_disruptors"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.i
+		custom_tooltip = aso_sc_specializations.2.i.tooltip
+		trigger = { has_technology = tech_autocannons_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_autocannons
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_autocannons_4
+			set_country_flag = mod_aso_sc_specializations_t2_autocannons
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t2_autocannons"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.j
+		custom_tooltip = aso_sc_specializations.2.j.tooltip
+		trigger = { has_technology = tech_aso_sc_swarmer_missiles_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_swarmers
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_swarmer_missiles_4
+			set_country_flag = mod_aso_sc_specializations_t2_swarmers
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t2_swarmers"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.2.k
+		custom_tooltip = aso_sc_specializations.2.k.tooltip
+		trigger = { has_technology = tech_torpedoes_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_torpedoes
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_torpedoes_4
+			set_country_flag = mod_aso_sc_specializations_t2_torpedoes
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_t2_torpedoes"
+				days = -1
+			}
+		}
+	}
+}
+
+# Defense Specialization Choice
+country_event = {
+	id = aso_sc_specializations.3
+	title = "aso_sc_specializations.3.name"
+	desc = "aso_sc_specializations.3.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_conversation
+	
+	is_triggered_only = yes
+	
+	trigger = { last_increased_tech = "tech_aso_sc_defense_spec" }
+
+	option = {
+		name = aso_sc_specializations.3.a
+		custom_tooltip = aso_sc_specializations.3.a.tooltip
+		trigger = { has_technology = tech_ship_armor_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_armor
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_ship_armor_4
+			set_country_flag = mod_aso_sc_specializations_armor
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_armor"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.3.b
+		custom_tooltip = aso_sc_specializations.3.b.tooltip
+		trigger = { has_technology = tech_aso_sc_hull_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_hull
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_aso_sc_hull_4
+			set_country_flag = mod_aso_sc_specializations_hull
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_hull"
+				days = -1
+			}
+		}
+	}
+	option = {
+		name = aso_sc_specializations.3.c
+		custom_tooltip = aso_sc_specializations.3.c.tooltip
+		trigger = { has_technology = tech_shields_3 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				has_country_flag = aso_sc_specializations_prefer_shields
+			}
+		}
+		hidden_effect = {
+			add_research_option = tech_shields_4
+			set_country_flag = mod_aso_sc_specializations_shields
+			add_modifier = {
+				modifier = "mod_aso_sc_specializations_shields"
+				days = -1
+			}
+		}
+	}
+}

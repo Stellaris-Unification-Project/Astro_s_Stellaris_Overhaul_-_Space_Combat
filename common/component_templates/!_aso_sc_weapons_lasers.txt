@@ -1,0 +1,529 @@
+# ####################
+#  Laser
+# ####################
+
+### Red Lasers
+weapon_component_template = {
+	key = "SMALL_RED_LASER"
+	size = small
+	type = instant
+
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+
+	prerequisites = { "tech_lasers_1" }
+	component_set = "RED_LASER"
+	projectile_gfx = "infrared_laser_s"
+	tags = { weapon_type_energy }
+	upgrades_to = "SMALL_BLUE_LASER"
+	ai_tags = { weapon_role_anti_armor } #tags must be pre-registered in common/weapon_tags
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t1_cost }
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+
+weapon_component_template = {
+	key = "MEDIUM_RED_LASER"
+	size = medium
+	type = instant
+	
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_1" }
+	component_set = "RED_LASER"
+	projectile_gfx = "infrared_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_BLUE_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t1_cost }
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_RED_LASER"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_1" }
+	component_set = "RED_LASER"
+	projectile_gfx = "infrared_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_BLUE_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t1_cost }
+		upkeep = {
+			energy = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+
+### Blue Lasers
+weapon_component_template = {
+	key = "SMALL_BLUE_LASER"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_2" }
+	component_set = "BLUE_LASER"
+	projectile_gfx = "blue_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_UV_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t2_cost }
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_BLUE_LASER"
+	size = medium
+	type = instant
+	
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_2" }
+	component_set = "BLUE_LASER"
+	projectile_gfx = "blue_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_UV_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t2_cost }
+		upkeep = {
+			energy = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_BLUE_LASER"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_2" }
+	component_set = "BLUE_LASER"
+	projectile_gfx = "blue_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_UV_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t2_cost }
+		upkeep = {
+			energy = @l_t2_upkeep_energy
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+### UV Lasers
+weapon_component_template = {
+	key = "SMALL_UV_LASER"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_laser_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_3" }
+	component_set = "UV_LASER"
+	projectile_gfx = "uv_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_XRAY_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t3_cost }
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_UV_LASER"
+	size = medium
+	type = instant
+	
+	icon = "GFX_ship_part_laser_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_3" }
+	component_set = "UV_LASER"
+	projectile_gfx = "uv_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_XRAY_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t3_cost }
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_UV_LASER"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_laser_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_3" }
+	component_set = "UV_LASER"
+	projectile_gfx = "uv_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_XRAY_LASER"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t3_cost }
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+### XRay Lasers
+weapon_component_template = {
+	key = "SMALL_XRAY_LASER"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_laser_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_4" }
+	component_set = "XRAY_LASER"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "SMALL_GAMMA_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			rare_crystals = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_XRAY_LASER"
+	size = medium
+	type = instant
+	
+	icon = "GFX_ship_part_laser_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_4" }
+	component_set = "XRAY_LASER"
+	projectile_gfx = "xray_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_GAMMA_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			rare_crystals = @m_t4_rare
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_XRAY_LASER"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_laser_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_4" }
+	component_set = "XRAY_LASER"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "LARGE_GAMMA_LASER"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			rare_crystals = @l_t4_rare
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+### Gamma Lasers
+weapon_component_template = {
+	key = "SMALL_GAMMA_LASER"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_laser_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_5" }
+	component_set = "GAMMA_LASER"
+	projectile_gfx = "gamma_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			rare_crystals = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "MEDIUM_GAMMA_LASER"
+	size = medium
+	type = instant
+	
+	icon = "GFX_ship_part_laser_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_5" }
+	component_set = "GAMMA_LASER"
+	projectile_gfx = "gamma_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			rare_crystals = @m_t5_rare
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "LARGE_GAMMA_LASER"
+	size = large
+	type = instant
+	
+	icon = "GFX_ship_part_laser_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_lasers_5" }
+	component_set = "GAMMA_LASER"
+	projectile_gfx = "gamma_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			rare_crystals = @l_t5_rare
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_lasers }
+		}
+	}
+}

@@ -1,0 +1,104 @@
+#aso_sc_starbase_building = {
+#	icon = "GFX_starbase_building_aso_sc_starbase_building"
+#	construction_days = 360
+#	
+#	potential = {
+#		exists = owner
+#		owner = { has_technology = tech_blah }
+#		NOT = { has_starbase_building = aso_sc_starbase_building }
+#		star = { is_star_class = sc_blah }
+#	}
+#	
+#	possible = {
+#		custom_tooltip = {
+#			fail_text = "requires_sc_blah"
+#			star = { is_star_class = sc_blah }
+#		}
+#	}
+#
+#	resources = {
+#		category = starbase_buildings
+#		cost = { alloys = 99999 }
+#		produces = { sr_dark_matter = 99999 }
+#		upkeep = { energy = 99999 }
+#	}
+#
+#	station_modifier = {
+#		starbase_trade_protection_range_add = 99999
+#		starbase_trade_protection_add = 99999
+#	}
+#	
+#	country_modifier = { country_admin_cap_add = 99999 }
+#
+#
+#	show_in_tech = "tech_blah
+#	
+#	ai_build_at_chokepoint = yes
+#	ai_build_outside_chokepoint = yes
+#	ai_weight = { weight = 9999 }
+#}
+
+aso_sc_communications_relay = {
+	icon = "GFX_starbase_building_aso_sc_communications_relay"
+	construction_days = 180
+
+	potential = { NOT = { has_starbase_building = aso_sc_communications_relay } }
+
+	possible = { always = yes }
+
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		upkeep = { energy = 3 }
+	}
+
+	station_modifier = {
+		starbase_trade_protection_range_add = 1
+		starbase_trade_protection_add = 5
+	}
+	
+	country_modifier = { country_admin_cap_add = 5 }
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 1 }
+}
+
+aso_sc_pulsar_observatory = {
+	icon = "GFX_spaceport_module_observatory"
+	construction_days = 360
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_sensors_3 }
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_pulsar"
+			star = {
+				OR = {
+					is_star_class = sc_pulsar
+					is_star_class = sc_neutron_star
+					solar_system = { any_system_planet = { is_planet_class = pc_pulsar } }
+					solar_system = { any_system_planet = { is_planet_class = pc_neutron_star } }
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		produces = { engineering_research = 15 }
+		upkeep = { energy = 1 }
+	}
+
+	show_in_tech = "tech_sensors_3"
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 150
+	}
+}

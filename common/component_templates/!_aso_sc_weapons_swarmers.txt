@@ -1,0 +1,209 @@
+#missile speed on spreadsheet is 400, demonstrably too fast
+@aso_sc_missile_speed_1 = 40
+@aso_sc_missile_speed_2 = 35
+@aso_sc_missile_speed_3 = 42
+
+# ####################
+#  	Swarmer Missiles
+# ####################
+
+### Swarmer Missile Launcher
+weapon_component_template = {
+	key = "SWARMER_MISSILE_1"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_swarmer_missiles_1" }
+	component_set = "SWARMER_MISSILE_1"
+	projectile_gfx = "swarmer_missiles"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "SWARMER_MISSILE_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t3_cost }
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_swarmers }
+		}
+	}
+}
+
+
+# ####################
+#  	NEW Swarmer Missiles
+# ####################
+
+weapon_component_template = {
+	key = "SWARMER_MISSILE_2"
+	size = torpedo
+	type = missile
+
+	icon = "GFX_ship_part_swarmer_missile_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_swarmer_missiles_2" }
+	component_set = "SWARMER_MISSILE_2"
+	projectile_gfx = "swarmer_missiles_02"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			volatile_motes = @m_t4_rare
+		}
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_swarmers }
+		}
+	}
+	upgrades_to = "ASO_SC_SWARMER_MISSILE_3"
+}
+
+
+weapon_component_template = {
+	key = "ASO_SC_SWARMER_MISSILE_3"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_aso_sc_swarmer_missile_3"
+	icon_frame = 1
+
+	prerequisites = { "tech_aso_sc_swarmer_missiles_3" }
+	component_set = "ASO_SC_SWARMER_MISSILE_3"
+	projectile_gfx = "aso_sc_swarmer_missiles_3"
+	upgrades_to = "ASO_SC_SWARMER_MISSILE_4"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			volatile_motes = @m_t4_rare
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_swarmers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ASO_SC_SWARMER_MISSILE_4"
+	size = torpedo
+	type = missile
+
+	icon = "GFX_ship_part_aso_sc_swarmer_missile_4"
+	icon_frame = 1
+
+	prerequisites = { "tech_aso_sc_swarmer_missiles_4" }
+	component_set = "ASO_SC_SWARMER_MISSILE_4"
+	projectile_gfx = "aso_sc_swarmer_missiles_4"
+	upgrades_to = "ASO_SC_SWARMER_MISSILE_5"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			volatile_motes = @m_t5_rare
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_swarmers }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ASO_SC_SWARMER_MISSILE_5"
+	size = torpedo
+	type = missile
+
+	icon = "GFX_ship_part_aso_sc_swarmer_missile_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_aso_sc_swarmer_missiles_5" }
+	component_set = "ASO_SC_SWARMER_MISSILE_5"
+	projectile_gfx = "aso_sc_swarmer_missiles_5"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			volatile_motes = @m_t6_rare
+		}
+		upkeep = {
+			energy = @m_t6_upkeep_energy
+			alloys = @m_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_swarmers }
+		}
+	}
+}

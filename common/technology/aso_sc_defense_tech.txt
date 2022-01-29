@@ -1,0 +1,575 @@
+######################################
+# New & Replaced Defense Techs
+######################################
+#
+# Armor 1-5: Added additional weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Armor 4-5: Added additional weight_modifiers (x0 if not has specialization)
+# Hull 1-5: New techs w/weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Hull 4-5: New techs w/weight_modifiers (x0 if not has specialization)
+# Shields 1-5: Added additional weight_modifiers (x5 if has specialization, x10 if has country flag preference)
+# Shields 4-5: Added additional weight_modifiers (x0 if not has specialization)
+#
+# ##################
+# Armor
+# ##################
+
+#Nanocomposite Materials
+tech_ship_armor_1 = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 0
+	category = { materials }
+	ai_update_type = all
+	start_tech = yes
+}
+
+#Ceramo-Metal Materials
+tech_ship_armor_2 = {
+	area = engineering
+	cost = @tier1cost2
+	tier = 1
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_1" }
+	weight = @tier1weight2
+	
+	gateway = infrastructure
+	
+	is_reverse_engineerable = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Plasteel Materials
+tech_ship_armor_3 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_2" }
+	weight = @tier2weight2
+	
+	gateway = infrastructure
+	
+	is_reverse_engineerable = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Durasteel Materials
+tech_ship_armor_4 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_3" }
+	weight = @tier3weight2
+	
+	gateway = infrastructure
+	
+	is_reverse_engineerable = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_armor }
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 5
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Neutronium Materials
+tech_ship_armor_5 = {
+	area = engineering
+	cost = @tier4cost2
+	tier = 4
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_ship_armor_4" }
+	weight = @tier4weight2
+	
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_armor }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_armor
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# ##################
+# Hull
+# ##################
+
+tech_aso_sc_hull_1 = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 0
+	category = { materials }
+	ai_update_type = all
+	start_tech = yes
+}
+
+tech_aso_sc_hull_2 = {
+	area = engineering
+	cost = @tier1cost2
+	tier = 1
+	category = { materials }
+	ai_update_type = all	
+	prerequisites = { "tech_aso_sc_hull_1" }
+	weight = @tier1weight2
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_aso_sc_hull_3 = {
+	area = engineering
+	cost = @tier2cost2
+	tier = 2
+	category = { materials }
+	ai_update_type = all	
+	prerequisites = { "tech_aso_sc_hull_2" }
+	weight = @tier2weight2
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_aso_sc_hull_4 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { materials }
+	ai_update_type = all	
+	prerequisites = { "tech_aso_sc_hull_3" }
+	weight = @tier3weight2
+	
+	is_reverse_engineerable = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_aso_sc_hull_5 = {
+	area = engineering
+	cost = @tier4cost2
+	tier = 4
+	category = { materials }
+	ai_update_type = all	
+	prerequisites = { "tech_aso_sc_hull_4" }
+	weight = @tier1weight2
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_hull
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# ##################
+# Shields
+# ##################
+
+tech_shields_1 = {
+	area = physics
+	cost = @tier1cost1
+	tier = 0
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_basic_science_lab_1" }
+	start_tech = yes
+}
+
+tech_shields_2 = {
+	area = physics
+	cost = @tier1cost2
+	tier = 1
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_shields_1" }
+	weight = @tier1weight2
+	
+	is_reverse_engineerable = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_shields_3 = {
+	area = physics
+	cost = @tier2cost2
+	tier = 2
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_shields_2" }
+	weight = @tier2weight2
+
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_shields_4 = {
+	area = physics
+	cost = @tier3cost2
+	tier = 3
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_shields_3" }
+	weight = @tier3weight2
+	
+	is_reverse_engineerable = yes
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+tech_shields_5 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 4
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_shields_4" }
+	weight = @tier4weight2
+	
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_country_flag = mod_aso_sc_specializations_shields
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

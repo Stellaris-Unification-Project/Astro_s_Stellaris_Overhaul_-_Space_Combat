@@ -1,0 +1,33 @@
+# Icons set here are the ones shown in component editor list.
+
+# Auto-Cannons
+
+component_set = {
+	key = "AUTOCANNON_1"
+	icon = "GFX_ship_part_autocannon_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AUTOCANNON_2"
+	icon = "GFX_ship_part_autocannon_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AUTOCANNON_3"
+	icon = "GFX_ship_part_autocannon_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_AUTOCANNON_4"
+	icon = "GFX_ship_part_aso_sc_autocannon_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_AUTOCANNON_5"
+	icon = "GFX_ship_part_aso_sc_autocannon_5"
+	icon_frame = 1	
+}

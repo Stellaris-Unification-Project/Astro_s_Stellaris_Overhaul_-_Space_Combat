@@ -1,0 +1,192 @@
+@missile_speed = 5
+
+# ####################
+#  Missiles
+# ####################
+
+### Missile Launcher
+weapon_component_template = {
+	key = "MISSILE_1"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_missile_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_missiles_1" }
+	component_set = "MISSILE_1"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MISSILE_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t1_cost }
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+	}
+}
+
+### Missile Launcher
+
+### Advanced Missile Launcher
+weapon_component_template = {
+	key = "MISSILE_2"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_missile_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_missiles_2" }
+	component_set = "MISSILE_2"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MISSILE_3"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t2_cost }
+		upkeep = {
+			energy = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+	}
+}
+
+### Strike Missile Launcher
+weapon_component_template = {
+	key = "MISSILE_3"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_missile_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_missiles_3" }
+	component_set = "MISSILE_3"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MISSILE_4"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t3_cost }
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+	}
+}
+
+### Heavy Missile Launcher
+weapon_component_template = {
+	key = "MISSILE_4"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_missile_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_missiles_4" }
+	component_set = "MISSILE_4"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MISSILE_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			volatile_motes = @m_t4_rare
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+	}
+}
+
+### Advanced Heavy Missile Launcher
+weapon_component_template = {
+	key = "MISSILE_5"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_missile_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_missiles_5" }
+	component_set = "MISSILE_5"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			volatile_motes = @m_t5_rare
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_missiles }
+		}
+	}
+}

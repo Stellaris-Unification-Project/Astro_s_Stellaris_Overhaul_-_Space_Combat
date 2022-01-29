@@ -1,0 +1,34 @@
+objectTypes = {
+
+	####################
+	#	Point Defense
+	####################
+	
+	#4
+	pdxparticle = {
+		name = "aso_sc_point_defense_4_muzzle_particle"
+		type = "aso_sc_point_defense_4_muzzle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_point_defense_4_hit_effect"
+		type = "aso_sc_point_defense_4_hit_effect"
+	
+		scale = 0.5
+	}
+	
+	#5
+	pdxparticle = {
+		name = "aso_sc_point_defense_5_muzzle_particle"
+		type = "aso_sc_point_defense_5_muzzle_particle"
+	
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "aso_sc_point_defense_5_hit_effect"
+		type = "aso_sc_point_defense_5_hit_effect"
+	
+		scale = 0.5
+	}
+}

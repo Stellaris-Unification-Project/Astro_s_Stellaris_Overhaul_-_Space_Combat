@@ -1,0 +1,31 @@
+# Icons set here are the ones shown in component editor list.
+
+component_set = {
+	key = "ASO_SC_HULL_1"
+	icon = "GFX_ship_part_aso_sc_hull_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_HULL_2"
+	icon = "GFX_ship_part_aso_sc_hull_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_HULL_3"
+	icon = "GFX_ship_part_aso_sc_hull_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ASO_SC_HULL_4"
+	icon = "GFX_ship_part_aso_sc_hull_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ASO_SC_HULL_5"
+	icon = "GFX_ship_part_aso_sc_hull_5"
+	icon_frame = 1	
+}

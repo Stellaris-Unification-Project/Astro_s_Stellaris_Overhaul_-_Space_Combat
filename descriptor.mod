@@ -1,0 +1,15 @@
+version="3.2.2"
+tags={
+	"Balance"
+	"Events"
+	"Gameplay"
+	"Graphics"
+	"Leaders"
+	"Military"
+	"Overhaul"
+	"Spaceships"
+	"Technologies"
+}
+name="z - Astro's Stellaris Overhaul - Space Combat"
+supported_version="3.2.2"
+remote_file_id="2730863827"

@@ -1,0 +1,53 @@
+entity = {
+	name = "arthropoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "arthropoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "avian_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "avian_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "fungoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "fungoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "humanoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "humanoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "lithoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "lithoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "mammalian_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "mammalian_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "molluscoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "molluscoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "plantoid_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "plantoid_01_bomber_mesh"
+	scale = 3.0
+}
+
+entity = {
+	name = "reptilian_01_aso_sc_strike_craft_x_1_entity"
+	pdxmesh = "reptilian_01_bomber_mesh"
+	scale = 3.0
+}

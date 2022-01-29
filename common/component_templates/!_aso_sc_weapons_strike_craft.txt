@@ -1,0 +1,372 @@
+#####################
+#  Strike Craft
+#####################
+
+@power_1 = -20
+@power_2 = -30
+@power_3 = -40
+@power_4 = -50
+@power_5 = -60
+
+@damage_min_1 = 4
+@damage_min_2 = 5
+@damage_min_3 = 6
+@damage_min_4 = 7
+@damage_min_5 = 8
+
+@damage_max_1 = 8
+@damage_max_2 = 11
+@damage_max_3 = 14
+@damage_max_4 = 17
+@damage_max_5 = 20
+
+@range_max = 10
+@accuracy = 1
+
+@tracking_1 = 0.7
+@tracking_2 = 0.77
+@tracking_3 = 0.85
+@tracking_4 = 0.92
+@tracking_5 = 1
+
+@shield_damage_mult = 1
+@shield_penetration = 1
+@armor_damage_mult = 1.5
+@armor_penetration = 0
+@hull_damage_mult = 1
+
+@strike_craft_hull_1 = 30
+@strike_craft_hull_2 = 45
+@strike_craft_hull_3 = 60
+@strike_craft_hull_4 = 75
+@strike_craft_hull_5 = 90
+
+@strike_craft_armor = 0
+
+@strike_craft_shield_1 = 10
+@strike_craft_shield_2 = 15
+@strike_craft_shield_3 = 20
+@strike_craft_shield_4 = 25
+@strike_craft_shield_5 = 30
+
+@strike_craft_evasion_1 = 0.6
+@strike_craft_evasion_2 = 0.65
+@strike_craft_evasion_3 = 0.7
+@strike_craft_evasion_4 = 0.75
+@strike_craft_evasion_5 = 0.8
+
+@strike_craft_speed_1 = 500
+@strike_craft_speed_2 = 550
+@strike_craft_speed_3 = 600
+@strike_craft_speed_4 = 650
+@strike_craft_speed_5 = 700
+
+@strike_craft_rotation = 0.8
+@strike_craft_acceleration = 1
+@strike_craft_regeneration = 1
+@strike_craft_launch_time = 1.5
+@strike_craft_count = 8
+@cooldown = 2.3
+@engagement_range = 100
+@rotation = 0.8
+
+#1 - Scout Wing
+strike_craft_component_template = {
+	key = "LARGE_SCOUT_HANGAR_1"
+	size = LARGE
+	entity = "fighter_entity"
+	
+	weapon_type = point_defence
+	projectile_gfx = "scout_laser_1"
+	
+	power = @power_1
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t1_cost }
+		upkeep = {
+			energy = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+	}
+	
+	count = @strike_craft_count
+	regeneration_per_day = @strike_craft_regeneration
+	launch_time = @strike_craft_launch_time
+	damage = { min = @damage_min_1 max = @damage_max_1 }
+	cooldown = @cooldown
+	range = @range_max
+	engagement_range = @engagement_range
+	accuracy = @accuracy
+	tracking = @tracking_1
+	health = @strike_craft_hull_1
+	armor = @strike_craft_armor
+	shield = @strike_craft_shield_1
+
+	evasion = @strike_craft_evasion_1
+	speed = @strike_craft_speed_1
+	rotation_speed = @strike_craft_rotation
+	acceleration = @strike_craft_acceleration
+
+	shield_penetration = @shield_penetration
+	armor_damage = @armor_damage_mult
+
+	ship_behavior = "aso_sc_fighters_behavior"
+	icon = "GFX_ship_part_strike_craft_scout_1"
+	icon_frame = 1
+	component_set = "SCOUT_HANGAR_1"
+	upgrades_to = "STRIKE_CRAFT_HANGAR_1"
+	tags = { weapon_type_strike_craft }
+}
+
+#2 - Basic Strike Craft
+strike_craft_component_template = {
+	key = "STRIKE_CRAFT_HANGAR_1"
+	size = LARGE
+	entity = "fighter_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_1"
+
+	power = @power_2
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t3_cost }
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+	}
+
+	count = @strike_craft_count
+	regeneration_per_day = @strike_craft_regeneration
+	launch_time = @strike_craft_launch_time
+
+	damage = { min = @damage_min_2 max = @damage_max_2 }
+	cooldown = @cooldown
+	range = @range_max
+	engagement_range = @engagement_range
+	accuracy = @accuracy
+	tracking = @tracking_2
+
+	health = @strike_craft_hull_2
+	armor = @strike_craft_armor
+	shield = @strike_craft_shield_2
+	evasion = @strike_craft_evasion_2
+
+	speed = @strike_craft_speed_2
+	rotation_speed = @rotation
+	acceleration = @strike_craft_acceleration
+
+	shield_penetration = @shield_penetration
+	armor_damage = @armor_damage_mult
+
+	ship_behavior = "aso_sc_fighters_behavior"
+
+	icon = "GFX_ship_part_strike_craft_fighter_1"
+	icon_frame = 1
+	component_set = "STRIKE_CRAFT_HANGAR_1"
+	prerequisites = { "tech_strike_craft_1" }
+	upgrades_to = "STRIKE_CRAFT_HANGAR_2"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+#3 - Improved Strike Craft
+strike_craft_component_template = {
+	key = "STRIKE_CRAFT_HANGAR_2"
+	size = LARGE
+	entity = "fighter_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_2"
+
+	power = @power_3
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t4_cost }
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+	}
+
+	count = @strike_craft_count
+	regeneration_per_day = @strike_craft_regeneration
+	launch_time = @strike_craft_launch_time
+
+	damage = { min = @damage_min_3 max = @damage_max_3 }
+	cooldown = @cooldown
+	range = @range_max
+	engagement_range = @engagement_range
+	accuracy = @accuracy
+	tracking = @tracking_3
+
+	health = @strike_craft_hull_3
+	armor = @strike_craft_armor
+	shield = @strike_craft_shield_3
+	evasion = @strike_craft_evasion_3
+
+	speed = @strike_craft_speed_3
+	rotation_speed = @rotation
+	acceleration = @strike_craft_acceleration
+
+	shield_penetration = @shield_penetration
+	armor_damage = @armor_damage_mult
+
+	ship_behavior = "aso_sc_fighters_behavior"
+
+	icon = "GFX_ship_part_strike_craft_fighter_2"
+	icon_frame = 1
+	component_set = "STRIKE_CRAFT_HANGAR_2"
+	prerequisites = { "tech_strike_craft_2" }
+	upgrades_to = "STRIKE_CRAFT_HANGAR_3"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+
+}
+
+#4 - Advanced Strike Craft
+strike_craft_component_template = {
+	key = "STRIKE_CRAFT_HANGAR_3"
+	size = LARGE
+	entity = "fighter_entity"
+	
+	weapon_type = point_defence
+	projectile_gfx = "strike_craft_laser_3"
+
+	power = @power_4
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t4_cost }
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+	}
+		
+	count = @strike_craft_count
+	regeneration_per_day = @strike_craft_regeneration
+	launch_time = @strike_craft_launch_time
+	
+	damage = { min = @damage_min_4 max = @damage_max_4 }
+	cooldown = @cooldown
+	range = @range_max
+	engagement_range = @engagement_range
+	accuracy = @accuracy
+	tracking = @tracking_4
+	
+	health = @strike_craft_hull_4
+	armor = @strike_craft_armor
+	shield = @strike_craft_shield_4
+	evasion = @strike_craft_evasion_4
+	
+	speed = @strike_craft_speed_4
+	rotation_speed = @rotation
+	acceleration = @strike_craft_acceleration
+	
+	shield_penetration = @shield_penetration
+	armor_damage = @armor_damage_mult
+	
+	ship_behavior = "aso_sc_fighters_behavior"
+
+	icon = "GFX_ship_part_strike_craft_fighter_3"
+	icon_frame = 1
+	component_set = "STRIKE_CRAFT_HANGAR_3"
+	prerequisites = { "tech_strike_craft_3" }
+	tags = { weapon_type_strike_craft }
+	upgrades_to = "ASO_SC_STRIKE_CRAFT_HANGAR_4"
+	ai_tags = { weapon_role_point_defense }
+}
+
+#5 - Shielded Strike Craft
+strike_craft_component_template = {
+	key = "ASO_SC_STRIKE_CRAFT_HANGAR_4"
+	size = LARGE
+	entity = "fighter_entity"
+	
+	ship_behavior = "aso_sc_fighters_behavior"
+	weapon_type = point_defence
+	
+	projectile_gfx = "aso_sc_strike_craft_laser_4"
+	icon = "GFX_ship_part_aso_sc_strike_craft_4"
+	icon_frame = 1
+	component_set = "ASO_SC_STRIKE_CRAFT_HANGAR_4"
+	prerequisites = { "tech_aso_sc_strike_craft_4" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t5_cost }
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t1_strike_craft }
+		}
+	}
+	
+	power = @power_5
+	count = @strike_craft_count
+	regeneration_per_day = @strike_craft_regeneration
+	launch_time = @strike_craft_launch_time
+	
+	damage = { min = @damage_min_5 max = @damage_max_5 }
+	cooldown = @cooldown
+	range = @range_max
+	engagement_range = @engagement_range
+	accuracy = @accuracy
+	tracking = @tracking_5
+	
+	health = @strike_craft_hull_5
+	armor = @strike_craft_armor
+	shield = @strike_craft_shield_5
+	evasion = @strike_craft_evasion_5
+	
+	speed = @strike_craft_speed_5
+	rotation_speed = @rotation
+	acceleration = @strike_craft_acceleration
+	
+	shield_penetration = @shield_penetration
+	armor_damage = @armor_damage_mult
+}

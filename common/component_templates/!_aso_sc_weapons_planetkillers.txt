@@ -1,0 +1,33 @@
+weapon_component_template = { # Machine World Beam
+	key = "ASO_SC_MACHINEWORLD_BEAM"
+	size = planet_killer
+	type = planet_killer
+	
+	icon = GFX_ship_part_aso_sc_machineworld_beam
+	icon_frame = 1
+
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_aso_sc_machineworld_beam" }
+
+	component_set = "ASO_SC_MACHINEWORLD_BEAM"
+
+#	planet_destruction_gfx = "machine_planet_gfx"
+}
+
+weapon_component_template = { # Hive World Beam
+	key = "ASO_SC_HIVEWORLD_BEAM"
+	size = planet_killer
+	type = planet_killer
+	
+	icon = GFX_ship_part_aso_sc_hiveworld_beam
+	icon_frame = 1
+
+	use_ship_kill_target = no
+
+	prerequisites = { "tech_aso_sc_hiveworld_beam" }
+
+	component_set = "ASO_SC_HIVEWORLD_BEAM"
+
+#	planet_destruction_gfx = "excrete_creep_planet_gfx"
+}

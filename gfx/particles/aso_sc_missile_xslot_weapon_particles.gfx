@@ -1,0 +1,42 @@
+ObjectTypes = {
+
+### Cruise Missile Warhead
+
+	pdxparticle = {
+		name = "aso_sc_missile_x_1_hit_effect"
+		type = "aso_sc_missile_x_1_hit_effect"
+		scale = 2.0
+	}
+                                                  
+	pdxparticle = {
+		name = "aso_sc_missile_x_1_idle_particle"
+		type = "aso_sc_missile_x_1_idle_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "aso_sc_missile_x_1_idle_trail_particle"
+		type = "aso_sc_missile_x_1_idle_trail_file"
+		scale = 1.0
+	}
+
+### Planck Missile Warhead
+
+	pdxparticle = {
+		name = "aso_sc_missile_x_2_hit_effect"
+		type = "aso_sc_missile_x_2_hit_effect"
+		scale = 2.0
+	}
+                                                  
+	pdxparticle = {
+		name = "aso_sc_missile_x_2_idle_particle"
+		type = "aso_sc_missile_x_2_idle_file"
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "aso_sc_missile_x_2_idle_trail_particle"
+		type = "aso_sc_missile_x_2_idle_trail_file"
+		scale = 1.0
+	}
+}

@@ -1,0 +1,199 @@
+# ####################
+#  Autocannons
+# ####################
+
+# ## Autocannons 1
+weapon_component_template = {
+	key = "AUTOCANNON_1"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_autocannon_1"
+	icon_frame = 1
+	
+	prerequisites = { "tech_autocannons_1" }
+	component_set = "AUTOCANNON_1"
+	projectile_gfx = "auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "AUTOCANNON_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t3_cost }
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_autocannons }
+		}
+	}
+}
+
+# ## Autocannons 2
+weapon_component_template = {
+	key = "AUTOCANNON_2"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_autocannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_autocannons_2" }
+	component_set = "AUTOCANNON_2"
+	projectile_gfx = "ripper_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "AUTOCANNON_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_autocannons }
+		}
+	}
+}
+
+# ####################
+#  NEW Autocannons
+# ####################
+
+# ## Autocannons 3
+weapon_component_template = {
+	key = "AUTOCANNON_3"
+	size = small
+	type = instant
+	
+	icon = "GFX_ship_part_autocannon_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_autocannons_3" }
+	component_set = "AUTOCANNON_3"
+	projectile_gfx = "stormfire_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = @s_t4_rare
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_autocannons }
+		}
+	}
+	upgrades_to = "ASO_SC_AUTOCANNON_4"
+}
+
+#4
+weapon_component_template = {
+	key = "ASO_SC_AUTOCANNON_4"
+	size = small
+	type = instant
+
+	icon = "GFX_ship_part_aso_sc_autocannon_4"
+	icon_frame = 1
+	prerequisites = { "tech_aso_sc_autocannons_4" }
+	component_set = "ASO_SC_AUTOCANNON_4"
+	projectile_gfx = "aso_sc_auto_cannons_4_s"
+	upgrades_to = "ASO_SC_AUTOCANNON_5"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			volatile_motes = @s_t5_rare
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_autocannons }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ASO_SC_AUTOCANNON_5"
+	size = small
+	type = instant
+
+	icon = "GFX_ship_part_aso_sc_autocannon_5"
+	icon_frame = 1
+	prerequisites = { "tech_aso_sc_autocannons_5" }
+	component_set = "ASO_SC_AUTOCANNON_5"
+	projectile_gfx = "aso_sc_auto_cannons_5_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			volatile_motes = @s_t6_rare
+		}
+		upkeep = {
+			energy = @s_t6_upkeep_energy
+			alloys = @s_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = volatile_motes }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { has_country_flag = mod_aso_sc_specializations_t2_autocannons }
+		}
+	}
+}

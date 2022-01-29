@@ -1,0 +1,437 @@
+﻿l_english:
+
+ ####################################
+ # Auras
+ ####################################
+ STARBASE_AURA_ASO_SC_HYPERLANE_REGISTRAR:0 "Friendly Aura - Hyperlane Registrar"
+ aura_starbase_aso_sc_hyperlane_registrar:0 "Friendly Aura - Hyperlane Registrar"
+ 
+ 
+ ####################################
+ # Component Sets
+ ####################################
+ ASO_SC_STRIKE_CRAFT_HANGAR_4:0 "$tech_aso_sc_strike_craft_4$"
+ ASO_SC_STRIKE_CRAFT_HANGAR_4_DESC:0 "$tech_aso_sc_strike_craft_4_desc$"
+ 
+ ASO_SC_FLAK_4:0 "$tech_aso_sc_flak_batteries_4$"
+ ASO_SC_FLAK_4_DESC:0 "$tech_aso_sc_flak_batteries_4_desc$"
+ ASO_SC_FLAK_5:0 "$tech_aso_sc_flak_batteries_5$"
+ ASO_SC_FLAK_5_DESC:0 "$tech_aso_sc_flak_batteries_5_desc$"
+ 
+ ASO_SC_POINT_DEFENSE_4:0 "$tech_aso_sc_pd_tracking_4$"
+ ASO_SC_POINT_DEFENSE_4_DESC:0 "$tech_aso_sc_pd_tracking_4_desc$"
+ ASO_SC_POINT_DEFENSE_5:0 "$tech_aso_sc_pd_tracking_5$"
+ ASO_SC_POINT_DEFENSE_5_DESC:0 "$tech_aso_sc_pd_tracking_5_desc$"
+
+
+ ASO_SC_MISSILE_X_1:0 "$tech_aso_sc_missile_x_1$"
+ ASO_SC_MISSILE_X_1_DESC:0 "$tech_aso_sc_missile_x_1_desc$"
+ ASO_SC_MISSILE_X_2:0 "$tech_aso_sc_missile_x_2$"
+ ASO_SC_MISSILE_X_2_DESC:0 "$tech_aso_sc_missile_x_2_desc$"
+ 
+ ASO_SC_STRIKE_CRAFT_X_1:0 "$tech_aso_sc_strike_craft_x_1$"
+ ASO_SC_STRIKE_CRAFT_X_1_DESC:0 "$tech_aso_sc_strike_craft_x_1_desc$"
+ ASO_SC_STRIKE_CRAFT_X_2:0 "$tech_aso_sc_strike_craft_x_2$"
+ ASO_SC_STRIKE_CRAFT_X_2_DESC:0 "$tech_aso_sc_strike_craft_x_2_desc$"
+
+ ASO_SC_FLAK_X_1:0 "$tech_aso_sc_flak_x_1$"
+ ASO_SC_FLAK_X_1_DESC:0 "$tech_aso_sc_flak_x_1_desc$"
+ ASO_SC_FLAK_X_2:0 "$tech_aso_sc_flak_x_2$"
+ ASO_SC_FLAK_X_2_DESC:0 "$tech_aso_sc_flak_x_2_desc$"
+ 
+ ASO_SC_POINT_DEFENSE_X_1:0 "$tech_aso_sc_point_defense_x_1$"
+ ASO_SC_POINT_DEFENSE_X_1_DESC:0 "$tech_aso_sc_point_defense_x_1_desc$"
+ ASO_SC_POINT_DEFENSE_X_2:0 "$tech_aso_sc_point_defense_x_2$"
+ ASO_SC_POINT_DEFENSE_X_2_DESC:0 "$tech_aso_sc_point_defense_x_2_desc$"
+
+ 
+ ASO_SC_PLASMA_4:0 "$tech_aso_sc_plasma_4$"
+ ASO_SC_PLASMA_4_DESC:0 "$tech_aso_sc_plasma_4_desc$"
+ ASO_SC_PLASMA_5:0 "$tech_aso_sc_plasma_5$"
+ ASO_SC_PLASMA_5_DESC:0 "$tech_aso_sc_plasma_5_desc$"
+ 
+ ASO_SC_DISRUPTOR_4:0 "$tech_aso_sc_disruptors_4$"
+ ASO_SC_DISRUPTOR_4_DESC:0 "$tech_aso_sc_disruptors_4_desc$"
+ ASO_SC_DISRUPTOR_5:0 "$tech_aso_sc_disruptors_5$"
+ ASO_SC_DISRUPTOR_5_DESC:0 "$tech_aso_sc_disruptors_5_desc$"
+ 
+ ASO_SC_AUTOCANNON_4:0 "$tech_aso_sc_autocannons_4$"
+ ASO_SC_AUTOCANNON_4_DESC:0 "$tech_aso_sc_autocannons_4_desc$"
+ ASO_SC_AUTOCANNON_5:0 "$tech_aso_sc_autocannons_5$"
+ ASO_SC_AUTOCANNON_5_DESC:0 "$tech_aso_sc_autocannons_5_desc$"
+ 
+ ASO_SC_SWARMER_MISSILE_3:0 "$tech_aso_sc_swarmer_missiles_3$"
+ ASO_SC_SWARMER_MISSILE_3_DESC:0 "$tech_aso_sc_swarmer_missiles_3_desc$"
+ ASO_SC_SWARMER_MISSILE_4:0 "$tech_aso_sc_swarmer_missiles_4$"
+ ASO_SC_SWARMER_MISSILE_4_DESC:0 "$tech_aso_sc_swarmer_missiles_4_desc$"
+ ASO_SC_SWARMER_MISSILE_5:0 "$tech_aso_sc_swarmer_missiles_5$"
+ ASO_SC_SWARMER_MISSILE_5_DESC:0 "$tech_aso_sc_swarmer_missiles_5_desc$"
+ 
+ ASO_SC_TORPEDO_4:0 "$tech_aso_sc_torpedoes_4$"
+ ASO_SC_TORPEDO_4_DESC:0 "$tech_aso_sc_torpedoes_4_desc$"
+ ASO_SC_TORPEDO_5:0 "$tech_aso_sc_torpedoes_5$"
+ ASO_SC_TORPEDO_5_DESC:0 "$tech_aso_sc_torpedoes_5_desc$"
+
+
+ ASO_SC_PLASMA_X_1:0 "$tech_aso_sc_plasma_x_1$"
+ ASO_SC_PLASMA_X_1_DESC:0 "$tech_aso_sc_plasma_x_1_desc$"
+ ASO_SC_PLASMA_X_2:0 "$tech_aso_sc_plasma_x_2$"
+ ASO_SC_PLASMA_X_2_DESC:0 "$tech_aso_sc_plasma_x_2_desc$"
+
+ ASO_SC_AUTOCANNON_X_1:0 "$tech_aso_sc_autocannon_x_1$"
+ ASO_SC_AUTOCANNON_X_1_DESC:0 "$tech_aso_sc_autocannon_x_1_desc$"
+ ASO_SC_AUTOCANNON_X_2:0 "$tech_aso_sc_autocannon_x_2$"
+ ASO_SC_AUTOCANNON_X_2_DESC:0 "$tech_aso_sc_autocannon_x_2_desc$"
+
+ ASO_SC_SWARMER_X_1:0 "$tech_aso_sc_swarmer_x_1$"
+ ASO_SC_SWARMER_X_1_DESC:0 "$tech_aso_sc_swarmer_x_1_desc$"
+ ASO_SC_SWARMER_X_2:0 "$tech_aso_sc_swarmer_x_2$"
+ ASO_SC_SWARMER_X_2_DESC:0 "$tech_aso_sc_swarmer_x_2_desc$"
+
+ ASO_SC_TORPEDO_X_1:0 "$tech_aso_sc_torpedo_x_1$"
+ ASO_SC_TORPEDO_X_1_DESC:0 "$tech_aso_sc_torpedo_x_1_desc$"
+ ASO_SC_TORPEDO_X_2:0 "$tech_aso_sc_torpedo_x_2$"
+ ASO_SC_TORPEDO_X_2_DESC:0 "$tech_aso_sc_torpedo_x_2_desc$"
+ 
+ ASO_SC_HULL_1:0 "$tech_aso_sc_hull_1$"
+ ASO_SC_HULL_1_DESC:0 "$tech_aso_sc_hull_1_desc$"
+ ASO_SC_HULL_2:0 "$tech_aso_sc_hull_2$"
+ ASO_SC_HULL_2_DESC:0 "$tech_aso_sc_hull_2_desc$"
+ ASO_SC_HULL_3:0 "$tech_aso_sc_hull_3$"
+ ASO_SC_HULL_3_DESC:0 "$tech_aso_sc_hull_3_desc$"
+ ASO_SC_HULL_4:0 "$tech_aso_sc_hull_4$"
+ ASO_SC_HULL_4_DESC:0 "$tech_aso_sc_hull_4_desc$"
+ ASO_SC_HULL_5:0 "$tech_aso_sc_hull_5$"
+ ASO_SC_HULL_5_DESC:0 "$tech_aso_sc_hull_5_desc$"
+ 
+ 
+ ####################################
+ # Component Templates
+ ####################################
+ ASO_SC_SMALL_PLASMA_4:0 "Small $ASO_SC_PLASMA_4$"
+ ASO_SC_MEDIUM_PLASMA_4:0 "Medium $ASO_SC_PLASMA_4$"
+ ASO_SC_LARGE_PLASMA_4:0 "Large $ASO_SC_PLASMA_4$"
+ ASO_SC_SMALL_PLASMA_5:0 "Small $ASO_SC_PLASMA_5$"
+ ASO_SC_MEDIUM_PLASMA_5:0 "Medium $ASO_SC_PLASMA_5$"
+ ASO_SC_LARGE_PLASMA_5:0 "Large $ASO_SC_PLASMA_5$"
+ 
+ ASO_SC_SMALL_DISRUPTOR_4:0 "Small $ASO_SC_DISRUPTOR_4$"
+ ASO_SC_MEDIUM_DISRUPTOR_4:0 "Medium $ASO_SC_DISRUPTOR_4$"
+ ASO_SC_SMALL_DISRUPTOR_5:0 "Small $ASO_SC_DISRUPTOR_5$"
+ ASO_SC_MEDIUM_DISRUPTOR_5:0 "Medium $ASO_SC_DISRUPTOR_5$"
+ 
+ ASO_SC_SMALL_AUTOCANNON_4:0 "Small $ASO_SC_AUTOCANNON_4$"
+ ASO_SC_MEDIUM_AUTOCANNON_4:0 "Medium $ASO_SC_AUTOCANNON_4$"
+ ASO_SC_SMALL_AUTOCANNON_5:0 "Small $ASO_SC_AUTOCANNON_5$"
+ ASO_SC_MEDIUM_AUTOCANNON_5:0 "Medium $ASO_SC_AUTOCANNON_5$" 
+ 
+ ASO_SC_SMALL_HULL_1:0 "Small $ASO_SC_HULL_1$"
+ ASO_SC_MEDIUM_HULL_1:0 "Medium $ASO_SC_HULL_1$"
+ ASO_SC_LARGE_HULL_1:0 "Large $ASO_SC_HULL_1$"
+ ASO_SC_SMALL_HULL_2:0 "Small $ASO_SC_HULL_2$"
+ ASO_SC_MEDIUM_HULL_2:0 "Medium $ASO_SC_HULL_2$"
+ ASO_SC_LARGE_HULL_2:0 "Large $ASO_SC_HULL_2$"
+ ASO_SC_SMALL_HULL_3:0 "Small $ASO_SC_HULL_3$"
+ ASO_SC_MEDIUM_HULL_3:0 "Medium $ASO_SC_HULL_3$"
+ ASO_SC_LARGE_HULL_3:0 "Large $ASO_SC_HULL_3$"
+ ASO_SC_SMALL_HULL_4:0 "Small $ASO_SC_HULL_4$"
+ ASO_SC_MEDIUM_HULL_4:0 "Medium $ASO_SC_HULL_4$"
+ ASO_SC_LARGE_HULL_4:0 "Large $ASO_SC_HULL_4$"
+ ASO_SC_SMALL_HULL_5:0 "Small $ASO_SC_HULL_5$"
+ ASO_SC_MEDIUM_HULL_5:0 "Medium $ASO_SC_HULL_5$"
+ ASO_SC_LARGE_HULL_5:0 "Large $ASO_SC_HULL_5$"
+ 
+ ASO_SC_MACHINEWORLD_BEAM:0 "Machine World Beam"
+ ASO_SC_MACHINEWORLD_BEAM_DESC:0 "Converts planets into $pc_machine$."
+ ASO_SC_HIVEWORLD_BEAM:0 "Hive World Beam"
+ ASO_SC_HIVEWORLD_BEAM_DESC:0 "Converts planets into $pc_hive$."
+ 
+	 
+ ####################################
+ # Events
+ ####################################
+ aso_sc_specializations.1.name:0 "Choose a specialization."
+ aso_sc_specializations.1.desc:0 "As we look to the stars, our scientists have come to us to decide how we will arm ourselves."
+ aso_sc_specializations.1.a:0 "Lasers."
+ aso_sc_specializations.1.a.tooltip:0 "We will direct our scientists to focus on the study of lasers."
+ aso_sc_specializations.1.b:0 "Mass Drivers."
+ aso_sc_specializations.1.b.tooltip:0 "We will direct our scientists to focus on the study of mass drivers."
+ aso_sc_specializations.1.c:0 "Missiles."
+ aso_sc_specializations.1.c.tooltip:0 "We will direct our scientists to focus on the study of missiles."
+ aso_sc_specializations.1.d:0 "Strike Craft."
+ aso_sc_specializations.1.d.tooltip:0 "We will direct our scientists to focus on the study of strike craft."
+ aso_sc_specializations.1.e:0 "Flak."
+ aso_sc_specializations.1.e.tooltip:0 "We will direct our scientists to focus on the study of flak."
+ aso_sc_specializations.1.f:0 "Point Defense."
+ aso_sc_specializations.1.f.tooltip:0 "We will direct our scientists to focus on the study of point defense."
+ 
+ aso_sc_specializations.2.name:0 "Choose a specialization."
+ aso_sc_specializations.2.desc:0 "As we have identified more advanced weapon types, our scientists have come to us to decide how we will arm ourselves."
+ aso_sc_specializations.2.a:0 "Lasers."
+ aso_sc_specializations.2.a.tooltip:0 "We will direct our scientists to focus on the study of lasers."
+ aso_sc_specializations.2.b:0 "Mass Drivers."
+ aso_sc_specializations.2.b.tooltip:0 "We will direct our scientists to focus on the study of mass drivers."
+ aso_sc_specializations.2.c:0 "Missiles."
+ aso_sc_specializations.2.c.tooltip:0 "We will direct our scientists to focus on the study of missiles."
+ aso_sc_specializations.2.d:0 "Strike Craft."
+ aso_sc_specializations.2.d.tooltip:0 "We will direct our scientists to focus on the study of strike craft."
+ aso_sc_specializations.2.e:0 "Flak."
+ aso_sc_specializations.2.e.tooltip:0 "We will direct our scientists to focus on the study of flak."
+ aso_sc_specializations.2.f:0 "Point Defense."
+ aso_sc_specializations.2.f.tooltip:0 "We will direct our scientists to focus on the study of point defense."
+ aso_sc_specializations.2.g:0 "Plasma Cannons."
+ aso_sc_specializations.2.g.tooltip:0 "We will direct our scientists to focus on the study of plasma cannons."
+ aso_sc_specializations.2.h:0 "Disruptors."
+ aso_sc_specializations.2.h.tooltip:0 "We will direct our scientists to focus on the study of disruptors."
+ aso_sc_specializations.2.i:0 "Autocannons."
+ aso_sc_specializations.2.i.tooltip:0 "We will direct our scientists to focus on the study of autocannons."
+ aso_sc_specializations.2.j:0 "Swarmer Missiles."
+ aso_sc_specializations.2.j.tooltip:0 "We will direct our scientists to focus on the study of swarmer missiles."
+ aso_sc_specializations.2.k:0 "Torpedoes."
+ aso_sc_specializations.2.k.tooltip:0 "We will direct our scientists to focus on the study of torpedoes."
+ 
+ aso_sc_specializations.3.name:0 "Choose a specialization."
+ aso_sc_specializations.3.desc:0 "As we have identified more advanced defense types, our scientists have come to us to decide how we will protect ourselves."
+ aso_sc_specializations.3.a:0 "Armor Plating."
+ aso_sc_specializations.3.a.tooltip:0 "We will direct our scientists to focus on the study of armor plating."
+ aso_sc_specializations.3.b:0 "Hull Reinforcement."
+ aso_sc_specializations.3.b.tooltip:0 "We will direct our scientists to focus on the study of hull reinforcement."
+ aso_sc_specializations.3.c:0 "Shields."
+ aso_sc_specializations.3.c.tooltip:0 "We will direct our scientists to focus on the study of shields."
+ 
+ aso_sc_planetkiller.101.name:0 "Terraform [From.GetName]"
+ aso_sc_planetkiller.101.desc:0 "[From.GetName] has been terraformed into $pc_machine$. Resistance is futile."
+ aso_sc_planetkiller.101.tooltip:0 "Terraform complete."
+ aso_sc_planetkiller.201.name:0 "Terraform [From.GetName]"
+ aso_sc_planetkiller.201.desc:0 "[From.GetName] has been terraformed into $pc_hive$. The swarm thrives."
+ aso_sc_planetkiller.201.tooltip:0 "Terraform complete."
+ 
+ 
+ ####################################
+ # Feature Flags
+ ####################################
+ feature_aso_sc_tier1_specialization:0 "Tier 1 Weapons Specialization"
+ feature_aso_sc_tier1_specialization_desc:0 "As we have identified more advanced weapon types, we must study our options so that that we may decide how we will continue to arm ourselves."
+
+ feature_aso_sc_tier2_specialization:0 "Tier 2 Weapons Specialization"
+ feature_aso_sc_tier2_specialization_desc:0 "As we have identified more advanced weapon types, we must study our options so that that we may decide how we will continue to arm ourselves."
+
+ feature_aso_sc_defense_specialization:0 "Defense Specialization"
+ feature_aso_sc_defense_specialization_desc:0 "As we have identified more advanced weapon types, we must study our options so that that we may decide how we will continue to arm ourselves."
+
+
+ ####################################
+ # Fleet Orders & Actions
+ ####################################
+ ASO_SC_MACHINEWORLD_BEAM_ACTION:0 "Terraform to Machine World"
+ FLEETORDER_DESTROY_PLANET_WITH_ASO_SC_MACHINEWORLD_BEAM:0 "Preparing to terraform $PLANET|Y$"
+ MESSAGE_DESC_FOR_ASO_SC_MACHINEWORLD_BEAM:0 "has been terraformed by"
+
+ ASO_SC_HIVEWORLD_BEAM_ACTION:0 "Terraform to Hive World"
+ FLEETORDER_DESTROY_PLANET_WITH_ASO_SC_HIVEWORLD_BEAM:0 "Preparing to terraform $PLANET|Y$"
+ MESSAGE_DESC_FOR_ASO_SC_HIVEWORLD_BEAM:0 "has been terraformed by"
+
+ target_is_machine_world:0 "§R$TRIGGER_FAIL$Target is already a $pc_machine$.§!"
+ target_is_hive_world:0 "§R$TRIGGER_FAIL$Target is already a $pc_hive$.§!"
+ is_a_habitable_planet_include_gaia:0 "Is a valid planet."
+ is_shielded:0 "Is shielded."
+
+
+ ####################################
+ # Opinion Modifiers
+ ####################################
+ opinion_aso_sc_planetkiller_machineorhivebeamed_a_world:0 "Forcibly terraformed a world"
+ opinion_aso_sc_planetkiller_machineorhivebeamed_an_uninhabited_world:0 "Made planet uninhabitable to others"
+ opinion_aso_sc_planetkiller_machineorhivebeamed_my_world:0 "Forcibly terraformed my world"
+ opinion_aso_sc_planetkiller_machineorhivebeamed_my_uninhabited_world:0 ""
+ opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world:0 "Forcibly terraformed a primitive world"
+ opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world_phile:0 "Forcibly terraformed a primitive world"
+ 
+ 
+ ####################################
+ # Policies
+ ####################################
+ policy_aso_sc_ground_combat_doctrine:0 "Ground Combat Doctrine"
+ policy_aso_sc_ground_combat_doctrine_desc:0 "There are many ways to prosecute a war to a successful conclusion. We must choose the doctrine that best plays to our strengths and weaknesses.\n"
+ aso_sc_policy_ground_combat_doctrine_defensive_focus:0 "Defensive Focus"
+ aso_sc_policy_ground_combat_doctrine_defensive_focus_desc:0 "Defense is the best offense.\n"
+ aso_sc_policy_ground_combat_doctrine_strategic_restraint:0 "Strategic Restraint"
+ aso_sc_policy_ground_combat_doctrine_strategic_restraint_desc:0 "Nothing is as dangerous as rushing into a fight without thinking. We must be careful to minimize our losses.\n"
+ aso_sc_policy_ground_combat_doctrine_guerilla_warfare:0 "Guerilla Warfare"
+ aso_sc_policy_ground_combat_doctrine_guerilla_warfare_desc:0 "Winning a war is done by undermining the enemy's will to fight.\n"
+ aso_sc_policy_ground_combat_doctrine_overwhelming_force:0 "Overwhelming Force"
+ aso_sc_policy_ground_combat_doctrine_overwhelming_force_desc:0 "If something is worth killing, it is worth overkilling. None shall stand against our force.\n"
+ 
+ 
+ ####################################
+ # Ship Sections
+ ####################################
+ CORVETTE_MID_H:0 "Fast Attack Frigate"
+ DESTROYER_BOW_H1:0 "Forward Strike Bow"
+ DESTROYER_BOW_G1S2:0 "First Strike Bow"
+ BATTLESHIP_BOW_B:0 "Alpha Strike Bow"
+ BATTLESHIP_STERN_G2:0 "Missile Stern"
+ TITAN_MID_HANGAR:0 "Titan Carrier Core"
+ TITAN_MID_MISSILE:0 "Titan Missile Core"
+ TITAN_MID_POINT_DEFENSE:0 "Titan Aegis Core"
+ TITAN_MID_MEDIUM:0 "Titan Barrage Core"
+ TITAN_MID_SMALL:0 "Titan Firestorm Core"
+ TITAN_STERN_HANGAR:0 "Titan Hangar Stern"
+ TITAN_STERN_MISSILE:0 "Titan Missile Stern"
+ TITAN_STERN_POINT_DEFENSE:0 "Titan Aegis Stern"
+ TITAN_STERN_MEDIUM:0 "Titan Barrage Stern"
+ TITAN_STERN_SMALL:0 "Titan Firestorm Stern"
+ CORE_JUGGERNAUT_SECTION_BOMBER:0 "Juggernaut Desolator"
+ CORE_ASO_SC_ANGIENT_JUGGERNAUT_SECTION:0 "Ancient Juggernaut"
+ 
+ 
+ ####################################
+ # Starbase Buildings
+ ####################################
+ sm_aso_sc_communications_relay:0 "Communications Relay"
+ sm_aso_sc_communications_relay_desc:0 "An advanced computer network and transceiver array that boosts and relays communications and other data-traffic at high speeds between systems."
+
+ sm_aso_sc_pulsar_observatory:0 "Pulsar Observatory"
+ sm_aso_sc_pulsar_observatory_desc:0 "By building a specialized science facility dedicated to studying a pulsar, our empire will surely be able to see improvements in our understanding of Engineering.\n"
+ requires_pulsar:0 "§RRequires a §YPulsar§! in the system.§!"
+
+ 
+ #####################################
+ # Static Modifiers
+ #####################################
+ # Military Specializations
+ mod_aso_sc_specializations_t1_lasers:0 "Weapon Specialization: Lasers"
+ mod_aso_sc_specializations_t1_lasers_desc:0 "Our military scientists have focused their research efforts on improving our lasers technology."
+ mod_aso_sc_specializations_t1_mass_drivers:0 "Weapon Specialization: Mass Drivers"
+ mod_aso_sc_specializations_t1_mass_drivers_desc:0 "Our military scientists have focused their research efforts on improving our mass drivers technology."
+ mod_aso_sc_specializations_t1_missiles:0 "Weapon Specialization: Missiles"
+ mod_aso_sc_specializations_t1_missiles_desc:0 "Our military scientists have focused their research efforts on improving our missiles technology."
+ mod_aso_sc_specializations_t1_strike_craft:0 "Weapon Specialization: Strike Craft"
+ mod_aso_sc_specializations_t1_strike_craft_desc:0 "Our military scientists have focused their research efforts on improving our strike craft technology."
+ mod_aso_sc_specializations_t1_flak:0 "Weapon Specialization: Flak"
+ mod_aso_sc_specializations_t1_flak_desc:0 "Our military scientists have focused their research efforts on improving our flak technology."
+ mod_aso_sc_specializations_t1_point_defense:0 "Weapon Specialization: Point Defense"
+ mod_aso_sc_specializations_t1_point_defense_desc:0 "Our military scientists have focused their research efforts on improving our point defense technology."
+
+ mod_aso_sc_specializations_t2_plasma:0 "Weapon Specialization: Plasma"
+ mod_aso_sc_specializations_t2_plasma_desc:0 "Our military scientists have focused their research efforts on improving our plasma technology."
+ mod_aso_sc_specializations_t2_disruptors:0 "Weapon Specialization: Disruptors"
+ mod_aso_sc_specializations_t2_disruptors_desc:0 "Our military scientists have focused their research efforts on improving our disruptors technology."
+ mod_aso_sc_specializations_t2_autocannons:0 "Weapon Specialization: Autocannons"
+ mod_aso_sc_specializations_t2_autocannons_desc:0 "Our military scientists have focused their research efforts on improving our autocannons technology."
+ mod_aso_sc_specializations_t2_swarmers:0 "Weapon Specialization: Swarmer Missiles"
+ mod_aso_sc_specializations_t2_swarmers_desc:0 "Our military scientists have focused their research efforts on improving our swarmer missiles technology."
+ mod_aso_sc_specializations_t2_torpedoes:0 "Weapon Specialization: Torpoedoes"
+ mod_aso_sc_specializations_t2_torpedoes_desc:0 "Our military scientists have focused their research efforts on improving our torpedoes technology."
+
+ mod_aso_sc_specializations_hull:0 "Defense Specialization: Hull Reinforcement"
+ mod_aso_sc_specializations_hull_desc:0 "Our military scientists have focused their research efforts on improving our hull reinforcement technology."
+ mod_aso_sc_specializations_armor:0 "Defense Specialization: Armor Plating"
+ mod_aso_sc_specializations_armor_desc:0 "Our military scientists have focused their research efforts on improving our armor plating technology."
+ mod_aso_sc_specializations_shields:0 "Defense Specialization: Shields"
+ mod_aso_sc_specializations_shields_desc:0 "Our military scientists have focused their research efforts on improving our shields technology."
+
+
+ #####################################
+ # Technologies
+ #####################################
+ #NEW WEAPONS
+ tech_aso_sc_missile_x_1:0 "Cruise Missiles"
+ tech_aso_sc_missile_x_1_desc:0 "Cruise missiles use ultra-long range reactors to reach across entire solar systems, and their extra-large warheads pack a devastating punch."
+ tech_aso_sc_missile_x_2:0 "Planck Missile"
+ tech_aso_sc_missile_x_2_desc:0 "Building upon the propulsion technology of cruise missiles, planck missiles take advantage of advanced quantum engineering techniques to enhance their destructive payloads."
+
+ tech_aso_sc_strike_craft_4:0 "Shielded Strike Craft"
+ tech_aso_sc_strike_craft_4_desc:0 "Innovations in engineering and sensor technologies make previous generations of strike craft obsolete. This generation has further improved astrometrics and weapons systems, and now employs miniaturized shield systems to defend against flak and energy weapons."
+ tech_aso_sc_strike_craft_x_1:0 "Heavy Bomber"
+ tech_aso_sc_strike_craft_x_1_desc:0 "Heavy Bombers use plasma bombs to destroy hard targets."
+ tech_aso_sc_strike_craft_x_2:0 "Phase Bomber"
+ tech_aso_sc_strike_craft_x_2_desc:0 "Phase Bombers use advanced dimenstional phasing technology to evade enemy defenses."
+
+ tech_aso_sc_flak_batteries_4:0 "Flak Array"
+ tech_aso_sc_flak_batteries_4_desc:0 "Advances in material physics give these weapons more streamlined fire control systems and larger barrels, allowing them to fire larger projectiles that detonate with a greater area of effect and with a higher intensity. The channels of high intensity plasma and molten shrapnel are exceptionally lethal to enemy strike craft."
+ tech_aso_sc_flak_batteries_5:0 "Flak Bombard"
+ tech_aso_sc_flak_batteries_5_desc:0 "Upgrades to previous generations and innovations in hyper-field physics allow these weapons to move fire control systems into quantum topological manifolds, further increasing the caliber that these weapons can fire. The huge munitions have a massive area of effect, making it nearly impossible for enemy strike craft to dodge incoming flak fire."
+ tech_aso_sc_flak_x_1:0 "Flak Cyclone"
+ tech_aso_sc_flak_x_1_desc:0 "By tying a flak battery into the ship's spinal mount, we can fire railgun rounds to tear apart enemy small ships with ease."
+ tech_aso_sc_flak_x_2:0 "Flak Constellation"
+ tech_aso_sc_flak_x_2_desc:0 "By tying a flak battery into the ship's spinal mount and directly to the power core, we can rapidly fire railgun rounds to tear apart enemy small ships with ease."
+
+ tech_aso_sc_pd_tracking_4:0 "Squall Point-Defense"
+ tech_aso_sc_pd_tracking_4_desc:0 "Advances in artificial intelligence allow these weapons to utilize micro-sentient AI for vastly improved threat tracking and prediction. The on-board micro-sentient AI is entirely dedicated to the task of generating a firing solution that can repel most offensive munitions."
+ tech_aso_sc_pd_tracking_5:0 "Gale Point-Defense"
+ tech_aso_sc_pd_tracking_5_desc:0 "Updated munitions systems and advances in matter-energy manipulation allow these weapons to fire munitions with diverted energy warheads. Instead of having complex systems managing multiple munition types each munition can format the energy release upon detonation to do the most damage to each specific incoming threat."
+ tech_aso_sc_point_defense_x_1:0 "Tempest Point Defense"
+ tech_aso_sc_point_defense_x_1_desc:0 "By tying a point defense array into the ship's central targeting computer, we can fire point defense rounds to tear apart enemy small ships with ease."
+ tech_aso_sc_point_defense_x_2:0 "Hellfire Point Defense"
+ tech_aso_sc_point_defense_x_2_desc:0 "By tying a flak battery into the ship's central targeting computer and directly to the power core, we can rapidly fire point defense rounds to tear apart enemy small ships with ease."
+ 
+ tech_aso_sc_plasma_4:0 "Plasma Artillery"
+ tech_aso_sc_plasma_4_desc:0 "Recent innovations in fluid dynamics allow these weapons to confine exotic plasma in cumulative confinement fields to more efficiently drive plasma projectiles into armor and hull plating. By dispersing more energy into the target and less into space the destructive potential is vastly improved."
+ tech_aso_sc_plasma_5:0 "Plasma Blasters"
+ tech_aso_sc_plasma_5_desc:0 "Further improvements to confinement technology and quantum field theory allow these plasma weapons to cycle exotic plasma through an interstitial field deformation, like a multi-dimensional smoke ring, reducing energy loss and inertia. The complex confinement field and increased kinetic energy make this vastly superior to previous weapons."
+ tech_aso_sc_plasma_x_1:0 "Plasma Battery"
+ tech_aso_sc_plasma_x_1_desc:0 "By tying our plasma delivery system into the ship's central targeting computer, we can fire fast-moving plasma balls to tear apart enemy ships with ease."
+ tech_aso_sc_plasma_x_2:0 "Plasma Bombard"
+ tech_aso_sc_plasma_x_2_desc:0 "By tying our plasma delivery system into the ship's central targeting computer and directly to the power core, we can rapidly fire even higher-energy fast-moving rounds to tear apart enemy ships with ease."
+
+ tech_aso_sc_disruptors_4:0 "Resonant Phase Disruptors"
+ tech_aso_sc_disruptors_4_desc:0 "These upgraded disruptors use improved quantum technologies to phase high energy charges into flux waves that resonate at the frequency most damaging to the material it is fired at. Far more versatile and destructive than previous disruptors."
+ tech_aso_sc_disruptors_5:0 "Baryon Disruptors"
+ tech_aso_sc_disruptors_5_desc:0 "These disruptors use innovations in particle physics to produce high energy charges to disrupt the gluons that hold quarks together. Instead of disrupting the molecular bonds of the target these disruptors shred the target's protons and neutrons into quark-gluon plasma, feeding an unrivaled and destructive chain reaction between subatomic particles themselves."
+ 
+ tech_aso_sc_autocannons_4:0 "Hellfire Autocannons"
+ tech_aso_sc_autocannons_4_desc:0 "This new generation of autocannon use advances in computing technologies to predict and lead targets with far greater accuracy. Additional advances in magnetic field manipulation allows these weapons to attain an even higher rate of fire than previous generations."
+ tech_aso_sc_autocannons_5:0 "Phasefire Autocannons"
+ tech_aso_sc_autocannons_5_desc:0 "The latest advancement in quantum field technologies allow these autocannons to attain an even higher rate of fire, overwhelming countermeasures and yielding even higher damage. A higher rate of fire, previously thought impossible without projectiles colliding, is achieved by phasing each projectile through a variable quantum field function, which decays shortly before impact, allowing each projectile to occupy the space of another in an unrelenting stream of kinetic energy."
+ tech_aso_sc_autocannon_x_1:0 "Thunderstorm Autocannons"
+ tech_aso_sc_autocannon_x_1_desc:0 "By tying our autocannon system into the ship's central targeting computer, we can fire fast-moving rounds to tear apart enemy small ships with ease."
+ tech_aso_sc_autocannon_x_2:0 "Firestorm Autocannons"
+ tech_aso_sc_autocannon_x_2_desc:0 "By tying our autocannon system into the ship's central targeting computer and directly to the power core, we can rapidly fire fast-moving rounds to tear apart enemy small ships with ease."
+
+ tech_aso_sc_swarmer_missiles_3:0 "Typhoon Missiles"
+ tech_aso_sc_swarmer_missiles_3_desc:0 "Advances in engineering and computing technologies allow these missiles to form complex flight geometries that are adaptable in flight. These missiles confuse modern point defense systems as well as formating flight paths to do the most damage to the target's vital systems. "
+ tech_aso_sc_swarmer_missiles_4:0 "Anvil Missiles"
+ tech_aso_sc_swarmer_missiles_4_desc:0 "The latest innovations in matter-energy confinement allow these weapons to contain miniaturized antimatter warheads. Engineers can now design containment systems to not only contain a warhead of antiprotons, but it can also utilize those antiprotons in miniaturized reaction control systems using antimatter annihilation, giving each missile incredible dodging capability and unpredictability."
+ tech_aso_sc_swarmer_missiles_5:0 "Banshee Missiles"
+ tech_aso_sc_swarmer_missiles_5_desc:0 "Further advances in Artificial Intelligence technologies allow these missiles to use a micro-sentient AI for guidance control over the whole swarm of missiles, giving each missile barrage the perfect flight pattern to overwhelm each point-defense system. The warheads for these weapons are also improved, using quantum field functions for directed energy output formatted to each impact."
+ tech_aso_sc_swarmer_x_1:0 "Horde Missiles"
+ tech_aso_sc_swarmer_x_1_desc:0 "By tying our swarmer missile launching system into the ship's central targeting computer, we can fire fast-moving swarms of missiles to tear apart enemy ships with ease."
+ tech_aso_sc_swarmer_x_2:0 "Throng Missiles"
+ tech_aso_sc_swarmer_x_2_desc:0 "By tying our swarmer missile launching system into the ship's central targeting computer and directly to the power core, we can rapidly fire fast-moving swarms of missiles to tear apart enemy ships with ease."
+
+ tech_aso_sc_torpedoes_4:0 "Annihilator Torpedoes"
+ tech_aso_sc_torpedoes_4_desc:0 "Further advances in engineering and matter-energy confinement allows these warheads to harness anti-particles in huge antimatter warheads. Even with such bulky confinement equipment the size of these torpedoes allow each warhead to harness several tons of antimatter, making the destructive output of these torpedoes nearly unmatched, even if they miss the target."
+ tech_aso_sc_torpedoes_5:0 "Eradicator Torpedoes"
+ tech_aso_sc_torpedoes_5_desc:0 "Innovations in spatial sciences and hyper-field technologies allow these torpedoes to weaponize even larger warheads, by storing all confinement equipment and drive systems in a quantum topological manifold. With all on-board equipment virtualized in quantum space the torpedo can now use an extensive array of high power shield modulators to pass through even more advanced shield systems."
+ tech_aso_sc_torpedo_x_1:0 "Stealth Torpedoes"
+ tech_aso_sc_torpedo_x_1_desc:0 "By applying our knowledge of sensor jamming techniques, we can employ larger torpedoes with more destructive payloads."
+ tech_aso_sc_torpedo_x_2:0 "Femto Torpedoes"
+ tech_aso_sc_torpedo_x_2_desc:0 "By advanced femto-engineering techniques, our stealth torpedoes are now even more difficult to target."
+ tech_aso_sc_machineworld_beam:0 "Machine World Beam"
+ tech_aso_sc_machineworld_beam_desc:0 "With our terraforming technology, we can use our superweapon to rapidly seed target worlds for assimilation."
+ tech_aso_sc_hiveworld_beam:0 "Hive World Beam"
+ tech_aso_sc_hiveworld_beam_desc:0 "With our terraforming technology, we can use our superweapon to rapidly seed target worlds for evolution."
+ 
+ #NEW DEFENSES
+ tech_aso_sc_hull_1:0 "Reinforced Hull"
+ tech_aso_sc_hull_1_desc:0 "Advances in materials science has allowed the production of ultra-dense hulls."
+ tech_aso_sc_hull_2:0 "Proton-Lattice Hull"
+ tech_aso_sc_hull_2_desc:0 "The latest innovations in materials science has produced ultra-dense hull surrounded by a proton lattice, allowing for disruption of both matter and energy weeapons."
+ tech_aso_sc_hull_3:0 "Gluon-Lattice Hull"
+ tech_aso_sc_hull_3_desc:0 "Further advances in materials science has given us the ability to wrap ultra-dense metals in a gluon lattice, providing superior disruption of matter and energy weapons."
+ tech_aso_sc_hull_4:0 "Graviton-Lattice Hull"
+ tech_aso_sc_hull_4_desc:0 "By applying our knowledge of gravimetrics to materials science, we can now wrap a lattice of gravitons around our hull superstructures, bending spacetime in such a manner that enemy weapons are disrupted as they strike."
+ tech_aso_sc_hull_5:0 "Quark-Lattice Hull"
+ tech_aso_sc_hull_5_desc:0 "By advanced femto-engineering techniques, our hull superstructures can now be wrapped in a protective sheath of spacetime-bending quarks."
+ 
+ #SPECIALIZATIONS
+ tech_aso_sc_weapon_t1_spec:0 "Tier 1 Weapons Specialization"
+ tech_aso_sc_weapon_t1_spec_desc:1 "As we have expand our empire into space, we must study our options so that that we may decide how we will arm ourselves."
+
+ tech_aso_sc_weapon_t2_spec:0 "Tier 2 Weapons Specialization"
+ tech_aso_sc_weapon_t2_spec_desc:1 "As we have identified more advanced weapon types, we must study our options so that that we may decide how we will continue to arm ourselves."
+
+ tech_aso_sc_defense_spec:0 "Defense Specialization"
+ tech_aso_sc_defense_spec_desc:0 "As we have identified more advanced defense types, we must study our options so that that we may decide how we will continue to protect ourselves."
+ 

@@ -1,0 +1,18 @@
+# PLASMA BATTERY & PLASMA BOMBARD
+
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_x_1"
+	color = { 1.0 0.15 0.15 1.0 }
+	hit_entity = "aso_sc_plasma_x_1_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_x_1_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_x_1_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_x_1_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

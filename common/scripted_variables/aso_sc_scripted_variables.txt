@@ -1,0 +1,42 @@
+#######################
+### SHIP COMPONENTS ###
+#######################
+
+@hull_1S = 50
+@hull_1M = 125
+@hull_1L = 300
+
+@hull_2S = 65
+@hull_2M = 160
+@hull_2L = 390
+
+@hull_3S = 85
+@hull_3M = 215
+@hull_3L = 510
+
+@hull_4S = 110
+@hull_4M = 275
+@hull_4L = 660
+
+@hull_5S = 145
+@hull_5M = 365
+@hull_5L = 870
+
+@hull_6S = 185
+@hull_6M = 465
+@hull_6L = 1110
+
+
+##################
+### TECH COSTS ###
+##################
+
+# TECH COSTS
+@aso_sc_tier6cost1 = 55000
+
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@aso_sc_tier6weight1 = 19

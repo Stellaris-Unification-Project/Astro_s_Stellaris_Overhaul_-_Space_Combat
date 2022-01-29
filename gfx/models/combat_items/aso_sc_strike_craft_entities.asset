@@ -1,0 +1,29 @@
+########
+## STRIKE CRAFT LASERS
+########
+#
+##4
+#hit
+entity = {
+	name = "aso_sc_strike_craft_laser_4_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "aso_sc_strike_craft_laser_4_small_hit_effect" sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#shield hit
+entity = {
+	name = "aso_sc_strike_craft_laser_4_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "aso_sc_strike_craft_laser_4_small_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

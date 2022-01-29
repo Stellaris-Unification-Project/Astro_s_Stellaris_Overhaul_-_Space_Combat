@@ -1,0 +1,144 @@
+#######
+# Disruptor
+#######
+
+#4
+
+#muzzle
+entity = {
+	name = "aso_sc_disruptor_4_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "aso_sc_disruptor_4_small_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+entity = {
+	name = "aso_sc_disruptor_4_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "aso_sc_disruptor_4_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+#hit
+entity = {
+	name = "aso_sc_disruptor_4_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = aso_sc_disruptor_4_small_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "aso_sc_disruptor_4_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = aso_sc_disruptor_4_medium_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#shield hit
+entity = {
+	name = "aso_sc_disruptor_4_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = aso_sc_disruptor_4_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "aso_sc_disruptor_4_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = aso_sc_disruptor_4_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+
+#5
+
+#muzzle
+entity = {
+	name = "aso_sc_disruptor_5_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "aso_sc_disruptor_5_small_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+entity = {
+	name = "aso_sc_disruptor_5_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "aso_sc_disruptor_5_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+#hit
+entity = {
+	name = "aso_sc_disruptor_5_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = aso_sc_disruptor_5_small_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "aso_sc_disruptor_5_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = aso_sc_disruptor_5_medium_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#shield hit
+entity = {
+	name = "aso_sc_disruptor_5_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = aso_sc_disruptor_5_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+entity = {
+	name = "aso_sc_disruptor_5_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = aso_sc_disruptor_5_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

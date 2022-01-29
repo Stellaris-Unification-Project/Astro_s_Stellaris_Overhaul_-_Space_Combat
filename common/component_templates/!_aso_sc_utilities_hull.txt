@@ -1,0 +1,457 @@
+#############
+# HULL      #
+#############
+
+utility_component_template = {
+	key = "ASO_SC_SMALL_HULL_1"
+	size = small
+	icon = "GFX_ship_part_aso_sc_hull_1"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_1S }
+	
+	prerequisites = { "tech_aso_sc_hull_1" }
+	component_set = "ASO_SC_HULL_1"
+	upgrades_to = "ASO_SC_SMALL_HULL_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t1_cost }
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_MEDIUM_HULL_1"
+	size = medium
+	icon = "GFX_ship_part_aso_sc_hull_1"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_1M }
+	
+	prerequisites = { "tech_aso_sc_hull_1" }
+	component_set = "ASO_SC_HULL_1"
+	upgrades_to = "ASO_SC_MEDIUM_HULL_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t1_cost }
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_LARGE_HULL_1"
+	size = large
+	icon = "GFX_ship_part_aso_sc_hull_1"
+	icon_frame = 1
+	power = 0
+	modifier = { Ship_hull_add = @hull_1L }
+	
+	prerequisites = { "tech_aso_sc_hull_1" }
+	component_set = "ASO_SC_HULL_1"
+	upgrades_to = "ASO_SC_LARGE_HULL_2"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t1_cost }
+		upkeep = {
+			energy = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "ASO_SC_SMALL_HULL_2"
+	size = small
+	icon = "GFX_ship_part_aso_sc_hull_2"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_2S }
+	
+	prerequisites = { "tech_aso_sc_hull_2" }
+	component_set = "ASO_SC_HULL_2"
+	upgrades_to = "ASO_SC_SMALL_HULL_3"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t2_cost }
+		upkeep = {
+			energy = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_MEDIUM_HULL_2"
+	size = medium
+	icon = "GFX_ship_part_aso_sc_hull_2"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_2M }
+	
+	prerequisites = { "tech_aso_sc_hull_2" }
+	component_set = "ASO_SC_HULL_2"
+	upgrades_to = "ASO_SC_MEDIUM_HULL_3"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t2_cost }
+		upkeep = {
+			energy = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_LARGE_HULL_2"
+	size = large
+	icon = "GFX_ship_part_aso_sc_hull_2"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_2L }
+	
+	prerequisites = { "tech_aso_sc_hull_2" }
+	component_set = "ASO_SC_HULL_2"
+	upgrades_to = "ASO_SC_LARGE_HULL_3"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t2_cost }
+		upkeep = {
+			energy = @l_t2_upkeep_energy
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "ASO_SC_SMALL_HULL_3"
+	size = small
+	icon = "GFX_ship_part_aso_sc_hull_3"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_3S }
+	
+	prerequisites = { "tech_aso_sc_hull_3" }
+	component_set = "ASO_SC_HULL_3"
+	upgrades_to = "ASO_SC_SMALL_HULL_4"
+	resources = {
+		category = ship_components
+		cost = { alloys = @s_t3_cost }
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_MEDIUM_HULL_3"
+	size = medium
+	icon = "GFX_ship_part_aso_sc_hull_3"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_3M }
+	
+	prerequisites = { "tech_aso_sc_hull_3" }
+	component_set = "ASO_SC_HULL_3"
+	upgrades_to = "ASO_SC_MEDIUM_HULL_4"
+	resources = {
+		category = ship_components
+		cost = { alloys = @m_t3_cost }
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_LARGE_HULL_3"
+	size = large
+	icon = "GFX_ship_part_aso_sc_hull_3"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_3L }
+	
+	prerequisites = { "tech_aso_sc_hull_3" }
+	component_set = "ASO_SC_HULL_3"
+	upgrades_to = "ASO_SC_LARGE_HULL_4"
+	resources = {
+		category = ship_components
+		cost = { alloys = @l_t3_cost }
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "ASO_SC_SMALL_HULL_4"
+	size = small
+	icon = "GFX_ship_part_aso_sc_hull_4"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_4S }
+	
+	prerequisites = { "tech_aso_sc_hull_4" }
+	component_set = "ASO_SC_HULL_4"
+	upgrades_to = "ASO_SC_SMALL_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_MEDIUM_HULL_4"
+	size = medium
+	icon = "GFX_ship_part_aso_sc_hull_4"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_4M }
+	
+	prerequisites = { "tech_aso_sc_hull_4" }
+	component_set = "ASO_SC_HULL_4"
+	upgrades_to = "ASO_SC_MEDIUM_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			volatile_motes = 2
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_LARGE_HULL_4"
+	size = large
+	icon = "GFX_ship_part_aso_sc_hull_4"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_4L }
+	
+	prerequisites = { "tech_aso_sc_hull_4" }
+	component_set = "ASO_SC_HULL_4"
+	upgrades_to = "ASO_SC_LARGE_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			volatile_motes = 3
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "ASO_SC_SMALL_HULL_5"
+	size = small
+	icon = "GFX_ship_part_aso_sc_hull_5"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_5S }
+	
+	prerequisites = { "tech_aso_sc_hull_5" }
+	component_set = "ASO_SC_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			volatile_motes = 2
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_MEDIUM_HULL_5"
+	size = medium
+	icon = "GFX_ship_part_aso_sc_hull_5"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_5M }
+	
+	prerequisites = { "tech_aso_sc_hull_5" }
+	component_set = "ASO_SC_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			volatile_motes = 3
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ASO_SC_LARGE_HULL_5"
+	size = large
+	icon = "GFX_ship_part_aso_sc_hull_5"
+	icon_frame = 1
+	power = 0
+	modifier = { ship_hull_add = @hull_5L }
+	
+	prerequisites = { "tech_aso_sc_hull_5" }
+	component_set = "ASO_SC_HULL_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			volatile_motes = 4
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_hull }
+		}
+	}
+}

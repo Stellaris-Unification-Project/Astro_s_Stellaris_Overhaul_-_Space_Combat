@@ -1,0 +1,64 @@
+objectTypes = {
+	
+	####################
+	#	Disruptor
+	####################
+	
+	#4
+	#muzzle
+	pdxparticle = {
+		name = "aso_sc_disruptor_4_small_muzzle_particle"
+		type = "aso_sc_disruptor_4_muzzle_particle"
+	
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "aso_sc_disruptor_4_medium_muzzle_particle"
+		type = "aso_sc_disruptor_4_muzzle_particle"
+	
+		scale = 1.0
+	}
+	
+	#hit
+	pdxparticle = {
+		name = "aso_sc_disruptor_4_small_hit_effect"
+		type = "aso_sc_disruptor_4_hit_effect"
+	
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "aso_sc_disruptor_4_medium_hit_effect"
+		type = "aso_sc_disruptor_4_hit_effect"
+	
+		scale = 1.0
+	}
+	
+	#5
+	#muzzle
+	pdxparticle = {
+		name = "aso_sc_disruptor_5_small_muzzle_particle"
+		type = "aso_sc_disruptor_5_muzzle_particle"
+	
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "aso_sc_disruptor_5_medium_muzzle_particle"
+		type = "aso_sc_disruptor_5_muzzle_particle"
+	
+		scale = 1.0
+	}
+	
+	#hit
+	pdxparticle = {
+		name = "aso_sc_disruptor_5_small_hit_effect"
+		type = "aso_sc_disruptor_5_hit_effect"
+	
+		scale = 0.75
+	}
+	pdxparticle = {
+		name = "aso_sc_disruptor_5_medium_hit_effect"
+		type = "aso_sc_disruptor_5_hit_effect"
+	
+		scale = 1.0
+	}
+}

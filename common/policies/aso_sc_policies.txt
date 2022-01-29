@@ -1,0 +1,151 @@
+##########################################################################
+# Ground Combat Policy
+#
+# #####
+#
+# AI:
+# Base AI-weight is 100, if unchanged
+# AI will grab whatever policy-option has the highest weight
+#
+# #####
+#
+##########################################################################
+
+aso_sc_ground_combat_doctrine = {
+	potential = { is_country_type = default }
+
+	option = {
+		name = "aso_sc_policy_ground_combat_doctrine_strategic_restraint"
+		
+		policy_flags = {}
+		modifier = {
+			army_disengage_chance_mult = 0.2
+			army_attack_damage_mult = -0.10
+		}
+
+		ai_weight = {
+			factor = 10
+			modifier = {
+				factor = 10
+				OR = {
+					has_ai_personality = erudite_explorers
+					has_ai_personality = spiritual_seekers
+					has_ai_personality = democratic_crusaders
+					has_ai_personality = federation_builders
+					has_ai_personality = servitors
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "aso_sc_policy_ground_combat_doctrine_defensive_focus"
+		
+		policy_flags = {}
+		modifier = {
+			army_defense_health_mult = 0.2
+			army_defense_damage_mult = 0.1
+			army_defense_morale_mult = 0.15
+		}
+		valid = {
+			NOR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ai_personality = fanatic_purifiers
+				has_ai_personality = devouring_swarm
+				has_ai_personality = exterminators
+				has_valid_civic = civic_hive_strength_of_legions
+				has_valid_civic = civic_machine_warbots
+			}
+		}
+		
+		ai_weight = {
+			factor = 10
+			modifier = {
+				factor = 10
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+			modifier = {
+				factor = 50
+				OR = { has_valid_civic = civic_inwards_perfection }
+			}
+		}
+	}
+		
+	option = {
+		name = "aso_sc_policy_ground_combat_doctrine_guerilla_warfare"
+		
+		policy_flags = {}
+		modifier = {
+			army_morale_damage_mult = 0.2
+			army_disengage_chance_mult = 0.1
+			army_defense_morale_mult = 0.1
+			army_damage_mult = -0.1
+		}
+		
+		ai_weight = {
+			factor = 10
+			modifier = {
+				factor = 10
+				OR = {
+					has_ai_personality = ruthless_capitalists
+					has_ai_personality = slaving_despots
+					has_ai_personality = decadent_hierarchy
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "aso_sc_policy_ground_combat_doctrine_overwhelming_force"
+		
+		policy_flags = {}
+		modifier = {
+			army_attack_damage_mult = 0.25
+			army_attack_morale_mult = 0.1
+			army_disengage_chance_mult = -0.1
+		}
+		
+		valid = {
+			NOR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile		
+			}
+		}
+		
+		ai_weight = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				NOR = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+					has_valid_civic = civic_hive_strength_of_legions
+					has_valid_civic = civic_machine_warbots
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					has_ai_personality = honorbound_warriors
+					has_ai_personality = fanatic_purifiers
+					has_ai_personality = fanatic_befrienders
+					has_ai_personality = devouring_swarm
+					has_ai_personality = exterminators
+				}
+			}
+		}
+	}
+}

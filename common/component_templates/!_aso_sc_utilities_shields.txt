@@ -1,0 +1,521 @@
+#############
+# SHIELDS   #
+#############
+
+# Deflectors
+utility_component_template = {
+	key = "SMALL_SHIELD_1"
+	size = small
+	icon = "GFX_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_S1
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_s_t1_cost }
+		upkeep = {
+			energy = @shield_s_t1_upkeep_energy
+			alloys = @shield_s_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S1
+		ship_shield_regen_add_static = @regen_S1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "SHIELD_1"
+	upgrades_to = "SMALL_SHIELD_2"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHIELD_1"
+	size = medium
+	icon = "GFX_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_M1
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_m_t1_cost }
+		upkeep = {
+			energy = @shield_m_t1_upkeep_energy
+			alloys = @shield_m_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M1
+		ship_shield_regen_add_static = @regen_M1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "SHIELD_1"
+	upgrades_to = "MEDIUM_SHIELD_2"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHIELD_1"
+	size = large
+	icon = "GFX_ship_part_shield_1"
+	icon_frame = 1
+	power = @power_L1
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_l_t1_cost }
+		upkeep = {
+			energy = @shield_l_t1_upkeep_energy
+			alloys = @shield_l_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L1
+		ship_shield_regen_add_static = @regen_L1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "SHIELD_1"
+	upgrades_to = "LARGE_SHIELD_2"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+# Advanced Deflectors
+utility_component_template = {
+	key = "SMALL_SHIELD_2"
+	size = small
+	icon = "GFX_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_S2
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_s_t2_cost }
+		upkeep = {
+			energy = @shield_s_t2_upkeep_energy
+			alloys = @shield_s_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S2
+		ship_shield_regen_add_static = @regen_S2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "SHIELD_2"
+	upgrades_to = "SMALL_SHIELD_3"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHIELD_2"
+	size = medium
+	icon = "GFX_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_M2
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_m_t2_cost }
+		upkeep = {
+			energy = @shield_m_t2_upkeep_energy
+			alloys = @shield_m_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M2
+		ship_shield_regen_add_static = @regen_M2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "SHIELD_2"
+	upgrades_to = "MEDIUM_SHIELD_3"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHIELD_2"
+	size = large
+	icon = "GFX_ship_part_shield_2"
+	icon_frame = 1
+	power = @power_L2
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_l_t2_cost }
+		upkeep = {
+			energy = @shield_l_t2_upkeep_energy
+			alloys = @shield_l_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L2
+		ship_shield_regen_add_static = @regen_L2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "SHIELD_2"
+	upgrades_to = "LARGE_SHIELD_3"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+# Shields
+utility_component_template = {
+	key = "SMALL_SHIELD_3"
+	size = small
+	icon = "GFX_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_S3
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_s_t3_cost }
+		upkeep = {
+			energy = @shield_s_t3_upkeep_energy
+			alloys = @shield_s_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S3
+		ship_shield_regen_add_static = @regen_S3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SHIELD_3"
+	upgrades_to = "SMALL_SHIELD_4"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHIELD_3"
+	size = medium
+	icon = "GFX_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_M3
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_m_t3_cost }
+		upkeep = {
+			energy = @shield_m_t3_upkeep_energy
+			alloys = @shield_m_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M3
+		ship_shield_regen_add_static = @regen_M3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SHIELD_3"
+	upgrades_to = "MEDIUM_SHIELD_4"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHIELD_3"
+	size = large
+	icon = "GFX_ship_part_shield_3"
+	icon_frame = 1
+	power = @power_L3
+	resources = {
+		category = ship_components
+		cost = { alloys = @shield_l_t3_cost }
+		upkeep = {
+			energy = @shield_l_t3_upkeep_energy
+			alloys = @shield_l_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L3
+		ship_shield_regen_add_static = @regen_L3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SHIELD_3"
+	upgrades_to = "LARGE_SHIELD_4"
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+# Advanced Shields
+utility_component_template = {
+	key = "SMALL_SHIELD_4"
+	size = small
+	icon = "GFX_ship_part_shield_4"
+	icon_frame = 1
+	power = @power_S4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t4_cost
+			exotic_gases = 1
+		}
+		upkeep = {
+			energy = @shield_s_t4_upkeep_energy
+			alloys = @shield_s_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S4
+		ship_shield_regen_add_static = @regen_S4 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SHIELD_4"
+	upgrades_to = "SMALL_SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHIELD_4"
+	size = medium
+	icon = "GFX_ship_part_shield_4"
+	icon_frame = 1
+	power = @power_M4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t4_cost
+			exotic_gases = 2
+		}
+		upkeep = {
+			energy = @shield_m_t4_upkeep_energy
+			alloys = @shield_m_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M4
+		ship_shield_regen_add_static = @regen_M4 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SHIELD_4"
+	upgrades_to = "MEDIUM_SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHIELD_4"
+	size = large
+	icon = "GFX_ship_part_shield_4"
+	icon_frame = 1
+	power = @power_L4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t4_cost
+			exotic_gases = 3
+		}
+		upkeep = {
+			energy = @shield_l_t4_upkeep_energy
+			alloys = @shield_l_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L4
+		ship_shield_regen_add_static = @regen_L4 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SHIELD_4"
+	upgrades_to = "LARGE_SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+# Hyper Shields
+utility_component_template = {
+	key = "SMALL_SHIELD_5"
+	size = small
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_S5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			exotic_gases = 2
+		}
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S5
+		ship_shield_regen_add_static = @regen_S5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "SMALL_DARK_MATTER_DEFLECTOR"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SHIELD_5"
+	size = medium
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_M5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			exotic_gases = 3
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M5
+		ship_shield_regen_add_static = @regen_M5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "MEDIUM_DARK_MATTER_DEFLECTOR"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SHIELD_5"
+	size = large
+	icon = "GFX_ship_part_shield_5"
+	icon_frame = 1
+	power = @power_L5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			exotic_gases = 4
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L5
+		ship_shield_regen_add_static = @regen_L5 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "LARGE_DARK_MATTER_DEFLECTOR"
+	component_set = "SHIELD_5"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { has_country_flag = mod_aso_sc_specializations_shields }
+		}
+	}
+}

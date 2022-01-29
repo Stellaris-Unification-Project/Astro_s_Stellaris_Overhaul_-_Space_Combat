@@ -1,0 +1,48 @@
+[h1]Astro's Stellaris Overhaul - Space Combat[/h1]
+This mod is meant to provide you more variation when you go to war.
+Note: Should be compatible with virtually any mod that doesn't also edit vanilla Stellaris weapons or weapon techs.
+[h2]Feature Summary[/h2]
+[h3]Vanilla Overwrites[/h3]
+- common/defines/00_defines.txt
+[list]
+[*]	Fallen Empires only have 1 level of repeatable techs (instead of 10).
+[*] Debris takes longer to analyze, but gives more research when analyzed.
+[*] Orbital Bombardment damages armies less, but has a higher chance to kill Pops.
+[*] Collateral damage from armies is increased.
+[*] Combat Width (# Armies that can fight at once) increased.
+[*] Generals have a lower chance to die.
+[*] Starbase capacity increases by 1 for each 100 Pops.
+[*] Ships won't cancel orders when evading hostiles as much.
+[*] Abandoned starbases decay slower.
+[*] Ship max evasion increased.
+[*] AI default shield/armor/hull ratio changes to 1/3 each.
+[*] Ships gain more XP from combat and piracy suppression.
+[*] Ships less likely to switch targets or target randomly in combat.
+[*] Ships less likely to target starbases over ships.
+[*] Army base health and morale increased.
+[*] Army experience gain increased.
+[*] AI more likely to use Jump drives.
+[*] AI more likely to engage 'boss' creatures.
+[*] AI may build more assault armies.
+[*] Fewer assault armies per pop.
+[*] AI more likely to engage if fleet power is almost equal.
+[/list]
+- Overwrote many hull/armor/shield/weapon components and techs (see New Content below to see why)
+[h3]New Content[/h3]
+- All weapons, shields, armor, and hull components now have 5 levels. All weapons have an X-slot version.
+[list]
+[*] All empires can research levels 1-3.
+[*] All empires can reverse-engineer (research debris) levels 1-4.
+[*] Only empires that specialize in a given area can research level 5 and the X-slot weapon.
+[*] Each empire can specialized in two weapon types and one defense type.
+[*] Added new Ship Sections to accomodate empires that specialize in missiles, strike craft, PD, etc.
+[*] AI will do this, too! And will kit out their ships to take advantage of their specializations!
+[/list]
+- 2 new Planet Killers: Machineworld beam and Hiveworld beam.
+- New Ground Combat Doctrine policy
+- Added new starbase buildings:
+[list]
+[*] Communications Relay (Admin Cap, Trade Protection)
+[*] Pulsar Observatory (Engineering Research)
+[/list]
+- Hangar module now availabe at game start, but gives same piracy suppression as other modules.

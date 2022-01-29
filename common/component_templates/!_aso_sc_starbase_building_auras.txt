@@ -1,0 +1,28 @@
+utility_component_template = {
+	key = "STARBASE_AURA_aso_sc_HYPERLANE_REGISTRAR"
+	size = medium
+	icon = "GFX_ship_part_aura_snare"
+	icon_frame = 1
+	power = 0
+
+	class_restriction = { shipclass_starbase }
+
+	friendly_aura = {
+		name = "starbase_aura_aso_sc_hyperlane_registrar"
+		system_wide = yes
+
+		stack_info = {
+			id = friendly_aso_sc_hyperlane_registrar_aura
+			priority = 10
+		}
+
+		modifier = { ship_speed_mult = 0.20 }
+
+		graphics = {
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

@@ -1,0 +1,107 @@
+# ####################
+#  Plasma
+# ####################
+
+#4
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_4_s"
+	color = { 1.0 0.2 1.0 1.0 }
+	hit_entity = "aso_sc_plasma_4_small_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_4_small_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_4_small_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_4_small_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_4_m"
+	color = { 1.0 0.2 1.0 1.0 }
+	hit_entity = "aso_sc_plasma_4_medium_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_4_medium_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_4_medium_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_4_medium_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_4_l"
+	color = { 1.0 0.2 1.0 1.0 }
+	hit_entity = "aso_sc_plasma_4_large_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_4_large_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_4_large_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_4_large_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+#5
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_5_s"
+	color = { 1.0 0.15 0.15 1.0 }
+	hit_entity = "aso_sc_plasma_5_small_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_5_small_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_5_small_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_5_small_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_5_m"
+	color = { 1.0 0.15 0.15 1.0 }
+	hit_entity = "aso_sc_plasma_5_medium_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_5_medium_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_5_medium_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_5_medium_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	name = "aso_sc_plasma_5_l"
+	color = { 1.0 0.15 0.15 1.0 }
+	hit_entity = "aso_sc_plasma_5_large_hit_entity"
+	shield_hit_entity = "aso_sc_plasma_5_large_shield_hit_entity"
+	muzzle_flash_entity = "aso_sc_plasma_5_large_muzzle_flash_entity"
+	
+	entity = "aso_sc_plasma_5_large_entity"
+	speed = 90.0			
+	max_duration = 3.0		
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

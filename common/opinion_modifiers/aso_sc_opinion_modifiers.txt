@@ -1,0 +1,41 @@
+##########
+# PLANET KILLER OPINION MODIFIERS
+##########
+
+# Forcibly terraformed a Planet (regular Empires' opinion of machine/hive)
+opinion_aso_sc_planetkiller_machineorhivebeamed_a_world = {
+	opinion = { base = -100 }
+	accumulative = yes
+	min = -500
+	decay = { base = 1 }
+}
+opinion_aso_sc_planetkiller_machineorhivebeamed_an_uninhabited_world = {
+	opinion = { base = -30 }
+	accumulative = yes
+	min = -150
+	decay = { base = 1 }
+}
+opinion_aso_sc_planetkiller_machineorhivebeamed_my_world = {
+	opinion = { base = -1000 }
+	accumulative = yes
+	min = -5000
+	decay = { base = 1 }
+}
+opinion_aso_sc_planetkiller_machineorhivebeamed_my_uninhabited_world = {
+	opinion = { base = -300 }
+	accumulative = yes
+	min = -1500
+	decay = { base = 1 }
+}
+opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world = {
+	opinion = { base = -40 }
+	accumulative = yes
+	min = -200
+	decay = { base = 1 }
+}
+opinion_aso_sc_planetkiller_machineorhivebeamed_a_primitive_world_phile = {
+	opinion = { base = -60 }
+	accumulative = yes
+	min = -300
+	decay = { base = 1 }
+}
