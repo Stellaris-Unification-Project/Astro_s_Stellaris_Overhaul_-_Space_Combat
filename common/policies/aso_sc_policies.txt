@@ -49,8 +49,7 @@ aso_sc_ground_combat_doctrine = {
 		}
 		valid = {
 			NOR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				is_militarist = yes
 				has_ai_personality = fanatic_purifiers
 				has_ai_personality = devouring_swarm
 				has_ai_personality = exterminators
@@ -63,10 +62,7 @@ aso_sc_ground_combat_doctrine = {
 			factor = 10
 			modifier = {
 				factor = 10
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = yes
 			}
 			modifier = {
 				factor = 50
@@ -111,10 +107,8 @@ aso_sc_ground_combat_doctrine = {
 		
 		valid = {
 			NOR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile		
+				is_pacifist = yes
+				is_xenophile = yes		
 			}
 		}
 		
@@ -122,16 +116,12 @@ aso_sc_ground_combat_doctrine = {
 			factor = 10
 			modifier = {
 				factor = 0.2
-				NOR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = no
 			}
 			modifier = {
 				factor = 5
 				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					is_militarist = yes
 					has_valid_civic = civic_hive_strength_of_legions
 					has_valid_civic = civic_machine_warbots
 				}

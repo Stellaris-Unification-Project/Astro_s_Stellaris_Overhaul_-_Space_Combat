@@ -9,7 +9,7 @@ can_destroy_planet_with_ASO_SC_MACHINEWORLD_BEAM = {
 	}
 	custom_tooltip = {
 		fail_text = is_shielded
-		NOT = { is_shielded = yes }
+		is_shielded = no
 	}
 }
 
@@ -24,7 +24,7 @@ can_destroy_planet_with_ASO_SC_HIVEWORLD_BEAM = {
 	}
 	custom_tooltip = {
 		fail_text = is_shielded
-		NOT = { is_shielded = yes }
+		is_shielded = no
 	}
 }
 

@@ -12,7 +12,7 @@ planet_event = {
 		if = {
 			limit = {
 				exists = owner
-				owner = { NOT = { is_same_value = from.owner } }
+				owner = { NOT = { is_same_empire = from.owner } }
 			}
 			from.owner = { country_event = { id = aso_sc_planetkiller.101 } }
 		}
@@ -40,11 +40,10 @@ planet_event = {
 			limit = {
 				exists = owner
 				owner = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						is_fallen_empire = yes
 					}
 				}
 			}
@@ -56,8 +55,8 @@ planet_event = {
 			every_country = {
 				limit = {
 					NOR = {
-						is_same_value = from.owner
-						is_same_value = root.owner
+						is_same_empire = from.owner
+						is_same_empire = root.owner
 						AND = {
 							has_federation = yes
 							is_in_federation_with = from.owner
@@ -130,7 +129,7 @@ planet_event = {
 			# modifier for allies + those upset by genocide
 			every_country = {
 				limit = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						has_communications = from.owner
 						has_communications = root.owner
@@ -149,7 +148,7 @@ planet_event = {
 			}
 			every_country = {
 				limit = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						has_communications = from.owner
 						has_communications = root.owner
@@ -220,7 +219,7 @@ planet_event = {
 		if = {
 			limit = {
 				exists = owner
-				owner = { NOT = { is_same_value = from.owner } }
+				owner = { NOT = { is_same_empire = from.owner } }
 			}
 			from.owner = { country_event = { id = aso_sc_planetkiller.201 } }
 		}
@@ -248,11 +247,10 @@ planet_event = {
 			limit = {
 				exists = owner
 				owner = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						is_fallen_empire = yes
 					}
 				}
 			}
@@ -264,8 +262,8 @@ planet_event = {
 			every_country = {
 				limit = {
 					NOR = {
-						is_same_value = from.owner
-						is_same_value = root.owner
+						is_same_empire = from.owner
+						is_same_empire = root.owner
 						AND = {
 							has_federation = yes
 							is_in_federation_with = from.owner
@@ -338,7 +336,7 @@ planet_event = {
 			# modifier for allies + those upset by genocide
 			every_country = {
 				limit = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						has_communications = from.owner
 						has_communications = root.owner
@@ -357,7 +355,7 @@ planet_event = {
 			}
 			every_country = {
 				limit = {
-					NOT = { is_same_value = from.owner }
+					NOT = { is_same_empire = from.owner }
 					OR = {
 						has_communications = from.owner
 						has_communications = root.owner
